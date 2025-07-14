@@ -13,7 +13,7 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ---
 
-## ✨ What's New - January 2025
+## ✨ What's New -
 
 ### **🎯 Complete State Persistence**
 - **Coverage maps now remember zoom, rotation, and pan state** when saved/loaded

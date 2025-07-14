@@ -2,6 +2,7 @@
 
 <img width="1680" height="1021" alt="WifiDiagReport" src="https://github.com/user-attachments/assets/a447d6ee-cf05-4acb-b280-9c05a8ff63ba" />
 
+<img width="1676" height="1019" alt="Wifi Scanner" src="https://github.com/user-attachments/assets/76a61591-fe96-4f3c-ba9e-30516367eeca" />
 
 ## Overview
 

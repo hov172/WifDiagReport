@@ -1,6 +1,7 @@
 # Wifi Diagnostics Report
 
-<img width="1023" alt="WifiApp" src="https://github.com/user-attachments/assets/3103d218-9c7b-4279-8b23-cdb0a489afcf" />
+<img width="1680" height="1021" alt="WifiDiagReport" src="https://github.com/user-attachments/assets/a447d6ee-cf05-4acb-b280-9c05a8ff63ba" />
+
 
 ## Overview
 
@@ -126,6 +127,8 @@ Built for IT professionals, support staff, students, and power users, it empower
 3. **Take Measurements** - Click locations to record real-time WiFi signal data
 4. **Transform & Analyze** - Zoom, rotate, pan for perfect alignment
 5. **Export Data** - Save as JSON project (with complete state) or generate PDF report
+
+<img width="1676" height="1025" alt="Converage Mapping" src="https://github.com/user-attachments/assets/0488cc4b-f4a6-42c5-a642-64d821dd0740" />
 
 ---
 

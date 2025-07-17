@@ -14,21 +14,21 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ## Features
 
-- 🎯 **Enhanced Dashboard** ⭐
-  - **🆕 Comprehensive system overview** with real-time network metrics
+- **Enhanced Dashboard** 
+  - **Comprehensive system overview** with real-time network metrics
   - Quick action cards for common diagnostic tasks (Speed Test, Network Scan, Ping Test)
   - Recent activity tracking with historical test results
   - Connection status indicators with signal quality badges
   - Improved metric visualization and status indicators
 
-- 🌐 **Real-Time Device & Network Info**
+- **Real-Time Device & Network Info**
   - Models, OS version (shown with marketing name & build), CPU/RAM, active interface, MAC/IP/DNS, WiFi details (SSID, channel, band, security)
   - Real-time network status monitoring with automatic refresh
   - Comprehensive system information collection
-  - **🆕 Enhanced dashboard integration** with quick stats and system overview
+  - **Enhanced dashboard integration** with quick stats and system overview
 
-- 📊 **Real-Time Signal Monitoring** ⭐
-  - **🆕 Live WiFi signal monitoring** with continuous 1-second updates
+- **Real-Time Signal Monitoring** 
+  - **Live WiFi signal monitoring** with continuous 1-second updates
   - Real-time charts showing RSSI, noise levels, and signal-to-noise ratio
   - Signal stability analysis with connection quality assessment
   - Trend detection (improving, stable, declining) over time
@@ -37,15 +37,23 @@ Built for IT professionals, support staff, students, and power users, it empower
   - Current signal status cards with real-time metrics
   - Signal variation analysis with stability ratings
 
-- 📡 **WiFi Scanner**
+- **WiFi Scanner**
   - Instantly see all nearby SSIDs, signal quality, channels, security protocols, and export full scans to CSV/text
   - Advanced channel analysis and interference detection
   - Visual signal strength indicators with consistent color coding (Green=Excellent, Blue=Good, Orange=Fair, Red=Poor)
   - Network detail modal with comprehensive technical information
   - Multi-AP network analysis with roaming detection
 
-- 🗺️ **Advanced Coverage Mapping**
+- **Advanced Coverage Mapping**
   - Interactive floor plan upload and visualization with support for PNG, JPEG, PDF, SVG, TIFF formats
+  - **Comprehensive measurement data collection** for each coverage point:
+    - **RSSI** (Received Signal Strength Indicator) in dBm
+    - **Noise Level** - Environmental noise measurement in dBm
+    - **SNR** (Signal-to-Noise Ratio) in dB - Critical for signal quality assessment
+    - **Channel and Band** information (2.4GHz, 5GHz, 6GHz)
+    - **SSID and BSSID** for AP identification
+    - **Timestamp** for temporal analysis
+    - **Coordinates** for precise location tracking
   - Multiple coordinate tracking modes:
     - **Manual Entry** - Type coordinates directly
     - **Click to Select** - Point and click on map
@@ -53,32 +61,36 @@ Built for IT professionals, support staff, students, and power users, it empower
     - **Grid Assistant** - Systematic measurement grid with customizable spacing
   - Full map transform support: zoom, rotate, pan with precise controls
   - Professional measurement point cards with signal quality indicators
+  - **Enhanced context menu system** - Right-click coverage points for comprehensive options:
+    - **"View Details"** - Shows detailed point information alert with signal data (RSSI, noise, SNR), timestamps, and coordinates
+    - **"Copy AP Info"** - Copies complete point information to clipboard including all metrics
+    - **"Delete Point"** - Shows confirmation dialog for point removal
   - Built-in recommendations system with best practices guide
   - **Complete state persistence** - save and load coverage map projects with exact zoom/rotation/pan state
-  - Export coverage maps as high-quality PDFs with measurement data
+  - Export coverage maps as high-quality PDFs with measurement data including SNR and noise analysis
   - Signal quality legend and coverage statistics
   - Roaming event detection and analysis
 
-- 🚦 **Comprehensive Speed & Network Testing**
+- **Comprehensive Speed & Network Testing**
   - Visual download/upload speed tests with animated meters
   - Latency and packet loss analysis with real-time monitoring
   - Historical tracking of all test results with automatic logging
-  - **🆕 "Run All Diagnostics"** - comprehensive automated testing suite with confirmation popup
-  - **🆕 Full-screen diagnostic overlay** with animated progress indicator
+  - **"Run All Diagnostics"** - comprehensive automated testing suite with confirmation popup
+  - **Full-screen diagnostic overlay** with animated progress indicator
   - Real-time progress indicators and detailed result breakdowns
   - Enhanced user feedback during test execution
 
-- 📊 **Professional Export System**
+- **Professional Export System**
   - Export all technical and user info, test results, and network scans
   - Multiple export formats (text reports, CSV data, PDF coverage maps)
   - Coverage map data export with complete measurement points and metadata
   - High-quality PDF generation with professional layouts
   - Customizable export templates
-  - **🆕 Enhanced export workflow** - app stays open after successful exports
-  - **🆕 Success feedback** with clear confirmation messages
+  - **Enhanced export workflow** - app stays open after successful exports
+  - **Success feedback** with clear confirmation messages
   - Real-time signal monitoring data export
 
-- 🎨 **Modern Professional UI**
+- **Modern Professional UI**
   - Enhanced welcome screen with animated feature cards
   - Modern sidebar with hover effects and smooth animations
   - Dynamic Light/Dark mode with professional color schemes
@@ -86,28 +98,28 @@ Built for IT professionals, support staff, students, and power users, it empower
   - Extensive keyboard shortcuts and VoiceOver support
   - Adaptive layout for different screen sizes
   - Performance-optimized for large datasets
-  - **🆕 Improved dashboard** with metric cards and quick actions
+  - **Improved dashboard** with metric cards and quick actions
 
-- 🧑‍💻 **Advanced Customization**
+- **Advanced Customization**
   - Hide or show any sidebar feature for deployments
   - Configuration file-based customization (no code changes needed)
   - Perfect for enterprise deployments and non-technical users
-  - **🆕 Updated configuration keys** for all current features
+  - **Updated configuration keys** for all current features
 
-- 🔧 **Advanced Technical Features**
+- **Advanced Technical Features**
   - Real-time WiFi monitoring and analysis
   - Advanced visualization with Charts framework
   - Comprehensive network diagnostics orchestration
   - Crash prevention and error handling
   - MainActor-optimized PDF generation
-  - **🆕 Enhanced diagnostic flow** with better user feedback
+  - **Enhanced diagnostic flow** with better user feedback
 
-- ❓ **Integrated Help & Documentation**
+- **Integrated Help & Documentation**
   - Comprehensive in-app help system
   - Step-by-step guides for all features
   - Coverage mapping best practices
   - Troubleshooting guides and technical explanations
-  - **🆕 Real-time monitoring usage guide**
+  - **Real-time monitoring usage guide**
 
 ---
 
@@ -207,6 +219,10 @@ The comprehensive diagnostic system includes:
 
 ### **January 2025 Updates** 
 
+#### **Enhanced User Interface**
+- **Fixed:** Right-click context menu in coverage mapping now properly shows "View Details" with comprehensive point information
+- **Impact:** Improved user experience with correct context menu functionality
+
 #### **Real-Time Signal Monitoring**
 - **Added:** Complete real-time WiFi monitoring with 1-second updates
 - **Impact:** Professional-grade network monitoring capabilities
@@ -239,9 +255,25 @@ The comprehensive diagnostic system includes:
 - **Fixed:** "Excellent" signals now consistently show green across all UI components
 - **Impact:** Improved visual consistency and user experience
 
+#### **Context Menu Functionality**
+- **Fixed:** Coverage point right-click "View Details" now shows point information instead of attempting deletion
+- **Impact:** Proper user interaction and context menu functionality
+
 #### **Crash Prevention**
 - **Fixed:** App no longer crashes when accessing roaming events with empty data
 - **Impact:** Improved stability during coverage analysis
+
+#### **Enhanced Data Collection**
+- **Added:** Comprehensive WiFi metrics collection for coverage mapping including RSSI, noise levels, and SNR
+- **Impact:** Professional-grade measurement data suitable for enterprise WiFi planning and analysis
+
+#### **Advanced Signal Quality Analysis**
+- **Added:** Noise floor measurements and signal-to-noise ratio calculations for each coverage point
+- **Impact:** More accurate signal quality assessment and troubleshooting capabilities
+
+#### **Enhanced User Interface**
+- **Fixed:** Right-click context menu in coverage mapping now properly shows "View Details" with comprehensive point information including SNR and noise data
+- **Impact:** Improved user experience with correct context menu functionality and complete measurement data access
 
 ---
 

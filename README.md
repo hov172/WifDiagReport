@@ -280,12 +280,6 @@ We welcome contributions! Whether you're fixing bugs, adding features, or improv
 
 ---
 
-## 📄 License
-
-This project is open-source and available under the MIT License.
-
----
-
 ## 🙏 Acknowledgments
 
 Built with ❤️ for the macOS community, IT professionals, and anyone who needs reliable network diagnostics.

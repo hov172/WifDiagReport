@@ -2,7 +2,7 @@
 
 <img width="1677" height="1025" alt="main" src="https://github.com/user-attachments/assets/4b0a9eb4-ea3f-4f7f-86e8-c4addf526ccb" />
 
-<img width="1680" height="1031" alt="Scanner" src="https://github.com/user-attachments/assets/3933e342-847f-4387-bf3b-64024de7f875" />
+<img width="1677" height="1018" alt="Scanning" src="https://github.com/user-attachments/assets/edd07ba4-cc55-4d22-8000-108b56ca9422" />
 
 ## Overview
 

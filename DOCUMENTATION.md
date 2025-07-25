@@ -1,6 +1,6 @@
 # Wifi Diagnostics Report
 
-<img width="1023" alt="WifiApp" src="https://github.com/user-attachments/assets/3103d218-9c7b-4279-8b23-cdb0a489afcf" />
+<img width="1677" height="1025" alt="main" src="https://github.com/user-attachments/assets/4b0a9eb4-ea3f-4f7f-86e8-c4addf526ccb" />
 
 ## Overview
 

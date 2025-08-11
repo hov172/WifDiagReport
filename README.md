@@ -1,3 +1,11 @@
+WiFi Diag Report is a macOS application designed for Wi-Fi and network diagnostics, system information retrieval, and technical troubleshooting. Built for IT professionals, support teams, students, and power users, it provides the ability to analyze a Mac’s connectivity, scan wireless networks, map coverage, measure speeds, and export comprehensive diagnostic reports with ease.
+
+# Intended Use:
+
+WiFi Diag Report enables IT staff to perform Wi-Fi tests and export detailed reports to identify potential sources of interference or connectivity issues in the surrounding environment.
+
+In my current role at a small college, we use a customized version of the application that hides advanced IT-level tools while allowing students to generate file to be emailed the diagnostic reports to the Help Desk. This process gives IT staff an effective starting point for troubleshooting Wi-Fi issues on student devices, serving as a reference before dispatching an IT-managed computer to the student’s location for further comparison and analysis. These customizations can be implemented by modifying the application’s configuration file.
+
 # Wifi Diagnostics Report
 
 <img width="1677" height="1025" alt="main" src="https://github.com/user-attachments/assets/4b0a9eb4-ea3f-4f7f-86e8-c4addf526ccb" />

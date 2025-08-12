@@ -24,9 +24,38 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ## What's New
 
+### Version 4.1 Build 1.2 - IT Analysis Engine & Professional Reporting
+
+#### **🚀 New IT Analysis Engine (NEW)**
+- **🆕 Comprehensive IT Diagnostic Reports** - Professional-grade analysis combining signal quality, performance metrics, environment assessment, and hardware capabilities
+- **🆕 Executive Summary Generation** - High-level overviews for IT management with overall network health scores and key findings
+- **🆕 IT-Focused Recommendations** - Prioritized action items with technical details and troubleshooting steps for help desk staff
+- **🆕 Technical Deep Dive Reports** - Detailed technical analysis with device specifications, network environment, and historical data
+- **🆕 Automated Analysis Engine** - Intelligent assessment of signal quality, performance bottlenecks, and optimization opportunities
+
+#### **📊 Enhanced Hardware Analysis (NEW)**
+- **🆕 Hardware Capability Assessment** - Comprehensive evaluation of WiFi standards, spatial streams, and device limitations
+- **🆕 Efficiency Rating System** - Automated hardware performance grading based on MCS index, NSS, and channel width capabilities
+- **🆕 Upgrade Opportunity Identification** - Specific recommendations for hardware improvements and compatibility assessments
+- **🆕 Inventory Management Support** - Detailed hardware specifications for asset tracking and lifecycle planning
+- **🆕 WiFi Standard Evolution Tracking** - Clear identification of WiFi 4/5/6 capabilities and performance implications
+
+#### **🔧 Professional Export Enhancement (NEW)**
+- **🆕 Multi-Format IT Reports** - Comprehensive diagnostic exports combining technical analysis with executive summaries
+- **🆕 Help Desk Integration** - Structured reports designed for IT support workflows and ticket management
+- **🆕 Technical Reference Integration** - Built-in guides for signal strength, security protocols, and WiFi standards
+- **🆕 Historical Data Integration** - Coverage mapping and performance history automatically included in reports
+- **🆕 Location-Aware Reporting** - Optional building/room information for site-specific troubleshooting
+
+#### **📱 Enhanced Dashboard Integration**
+- **🆕 IT Analysis Quick Actions** - Direct access to comprehensive diagnostic report generation
+- **🆕 Hardware Status Cards** - Real-time display of device capabilities and efficiency ratings
+- **🆕 Analysis Summary Display** - Key findings and recommendations prominently featured
+- **🆕 One-Click Report Generation** - Streamlined workflow for creating professional IT reports
+
 ### Version 4.0 Build 1.2 - Performance Optimizations & Stability Improvements
 
-#### **🚀 Real-Time Monitoring Performance Fixes (NEW)**
+#### **🚀 Real-Time Monitoring Performance Fixes**
 - **🆕 Fixed SwiftUI State Management** - Eliminated "Modifying state during view update" errors that caused undefined behavior
 - **🆕 Optimized Chart Rendering** - Resolved filtering issues that prevented signal data from displaying in real-time charts
 - **🆕 Enhanced Data Flow** - Streamlined filtering logic with proper computed property implementation for smooth UI updates
@@ -137,6 +166,15 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ## Features
 
+- **IT Analysis Engine (NEW in v4.1)**
+  - **🆕 Comprehensive Diagnostic Reports** - Professional-grade analysis combining signal quality, performance metrics, environment assessment, and hardware evaluation
+  - **🆕 Executive Summary Generation** - High-level network health scores and key findings for IT management
+  - **🆕 Prioritized IT Recommendations** - Critical, high, medium, and low priority action items with technical details
+  - **🆕 Technical Deep Dive Reports** - Detailed device specifications, network environment analysis, and historical data integration
+  - **🆕 Help Desk Integration** - Structured reports designed for IT support workflows and ticket management
+  - **🆕 Hardware Capability Assessment** - WiFi standard evaluation, efficiency ratings, and upgrade opportunity identification
+  - **🆕 Multi-Format Export** - Professional reports suitable for management, technical staff, and documentation
+
 - Real-Time Device & Network Info
   - Models, OS version (shown with marketing name & build), CPU/RAM, active interface, MAC/IP/DNS, WiFi details (SSID, channel, band, security)
   - **🆕 Advanced WiFi Metrics** - MCS Index, Spatial Streams (NSS), Channel Width, PHY Mode (802.11n/ac/ax)
@@ -199,6 +237,7 @@ Built for IT professionals, support staff, students, and power users, it empower
   - Export all technical and user info, test results, and network scans
   - Multiple export formats (text reports, CSV data, high-quality PDF coverage maps)
   - **🆕 Enhanced coverage map data export** with complete MCS/NSS measurement points and transform state
+  - **🆕 IT Analysis Report Export** - Professional diagnostic reports with executive summaries and technical deep dives
   - MainActor-optimized PDF generation for reliable exports
   - Enhanced export workflow - app stays open after successful exports
   - Customizable export templates with user and location information
@@ -206,6 +245,7 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 - Modern Professional UI
   - **🆕 Enhanced dashboard** with Advanced WiFi Metrics card showing MCS descriptions and NSS analysis
+  - **🆕 IT Analysis Integration** - Quick access to comprehensive diagnostic report generation
   - Enhanced welcome screen with animated feature cards
   - Modern sidebar with hover effects and smooth animations
   - Dynamic Light/Dark mode with professional color schemes
@@ -224,6 +264,8 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 - Advanced Technical Features
   - **🆕 Enhanced WiFi Analysis** - Deep system profiler integration for MCS/NSS detection
+  - **🆕 IT Analysis Engine** - Comprehensive diagnostic assessment with professional reporting
+  - **🆕 Hardware Capability Analysis** - WiFi standard evaluation and upgrade recommendations
   - **🆕 Optimized real-time monitoring** with proper SwiftUI state management and performance improvements
   - Advanced visualization with Charts framework and reliable data filtering
   - Comprehensive network diagnostics orchestration
@@ -237,12 +279,67 @@ Built for IT professionals, support staff, students, and power users, it empower
   - Coverage mapping best practices
   - Troubleshooting guides and technical explanations
   - **🆕 MCS/NSS technical documentation** and WiFi standard explanations
+  - **🆕 IT Analysis Guide** - Professional reporting and diagnostic workflow documentation
   - Real-time monitoring usage guide
   - **🆕 Performance troubleshooting** section for real-time monitoring issues
 
 ---
 
-## Advanced WiFi Metrics Guide (New in v4.0)
+## IT Analysis Engine Guide (New in v4.1)
+
+### Comprehensive IT Diagnostic Reports
+The new IT Analysis Engine provides professional-grade diagnostic reports designed for help desk and IT support teams:
+
+#### **Executive Summary**
+- **Overall Network Health Score** - Weighted assessment combining signal quality, performance, and environment factors
+- **High-Level Findings** - Key issues and positive aspects in business-friendly language
+- **Risk Assessment** - Identification of critical issues affecting productivity
+
+#### **Signal Analysis Report**
+- **Signal Quality Assessment** - RSSI categorization with interference level analysis
+- **SNR Quality Evaluation** - Signal-to-noise ratio impact on connection reliability
+- **Capacity Utilization** - Network load assessment and roaming readiness
+- **Signal Stability** - Connection consistency and variation analysis
+
+#### **Performance Report**
+- **Speed Analysis** - Download/upload performance with quality ratings
+- **Latency Assessment** - Real-time application impact evaluation
+- **Reliability Scoring** - Overall connection dependability metrics
+- **Application Readiness** - Gaming, streaming, voice calls, and download suitability
+
+#### **Environment Report**
+- **Network Congestion** - Channel utilization and interference source identification
+- **Security Assessment** - Security protocol analysis and vulnerability identification
+- **Band Utilization** - 2.4GHz, 5GHz, and 6GHz usage patterns
+- **Optimization Opportunities** - Specific recommendations for network improvements
+
+#### **Hardware Report**
+- **WiFi Standard Identification** - Device capability assessment (WiFi 4/5/6)
+- **Efficiency Rating** - Hardware performance grading based on MCS/NSS capabilities
+- **Upgrade Opportunities** - Specific hardware improvement recommendations
+- **Compatibility Assessment** - Modern standard support evaluation
+
+### IT Recommendations System
+**Prioritized Action Items** with four priority levels:
+- **Critical** - Issues requiring immediate attention affecting productivity
+- **High** - Important improvements with significant impact
+- **Medium** - Beneficial optimizations for better performance
+- **Low** - Nice-to-have improvements for optimal setup
+
+Each recommendation includes:
+- **Technical Details** - Specific metrics and measurements
+- **Action Items** - Step-by-step troubleshooting instructions
+- **Category Classification** - Signal, Security, Performance, Hardware, Environment, Configuration
+
+### Professional Export Formats
+- **Executive Summary Reports** - Management-friendly overviews with key findings
+- **Technical Deep Dive** - Comprehensive technical analysis with all metrics
+- **Help Desk Integration** - Structured format for ticket management systems
+- **Historical Data Integration** - Coverage mapping and performance history inclusion
+
+---
+
+## Advanced WiFi Metrics Guide
 
 ### Understanding MCS Index
 **Modulation and Coding Scheme (MCS)** determines the data rate and signal quality of your WiFi connection:
@@ -303,7 +400,15 @@ Built for IT professionals, support staff, students, and power users, it empower
 5. **🆕 Real-Time Monitor** - Monitor WiFi signal quality in real-time with stable, high-performance chart visualization
 6. **🆕 Enhanced Coverage Mapping** - Upload floor plans and create professional signal maps with MCS/NSS data collection
 7. Speed Testing - Run comprehensive network performance tests
-8. **🆕 Enhanced Export** - Generate professional reports with advanced WiFi analytics
+8. **🆕 IT Analysis Reports** - Generate professional diagnostic reports with executive summaries and technical analysis
+9. **🆕 Enhanced Export** - Generate professional reports with advanced WiFi analytics and IT recommendations
+
+### IT Analysis Workflow (New in v4.1)
+1. Navigate to Dashboard - Access IT Analysis quick actions
+2. **Generate IT Report** - Click "Generate IT Analysis Report" for comprehensive diagnostic
+3. **Review Analysis** - Examine executive summary, key findings, and prioritized recommendations
+4. **Export Report** - Save professional report in multiple formats for documentation and ticket management
+5. **Take Action** - Follow prioritized recommendations with technical details and action items
 
 ### Coverage Mapping Workflow 
 1. Upload Floor Plan - Drag & drop or select PNG, JPEG, PDF, SVG, TIFF files
@@ -320,7 +425,7 @@ Built for IT professionals, support staff, students, and power users, it empower
 5. Analyze Trends - Monitor signal stability, variation, and connection quality
 6. **🆕 Advanced Export** - Save monitoring session data as CSV with MCS/NSS metrics for analysis
 
-### Advanced WiFi Analysis (New in v4.0)
+### Advanced WiFi Analysis
 1. **MCS Index Monitoring** - Track Modulation and Coding Scheme for data rate optimization
 2. **Spatial Streams Analysis** - Monitor MIMO stream count for throughput analysis
 3. **Channel Width Detection** - Identify 20MHz, 40MHz, 80MHz, 160MHz configurations
@@ -375,6 +480,11 @@ Built for IT professionals, support staff, students, and power users, it empower
 - Check available disk space
 - Try alternative export formats if one fails
 
+#### **IT Analysis Issues (New in v4.1)**
+- Ensure device is connected to WiFi for comprehensive analysis
+- Check system permissions for hardware information access
+- Verify network connectivity for performance testing integration
+
 #### **Performance Optimization**
 - Close unnecessary apps during intensive monitoring sessions
 - Reduce chart update frequency for older Macs if needed
@@ -397,54 +507,7 @@ This file uses keys of the form HideXXXX for each feature or tool in the sidebar
 - Set the value to <false/> to show that section/tool
 
 #### Example: Configuration.plist
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>HideDashboard</key>
-    <false/>
-    <key>HideNetworkScanner</key>
-    <false/>
-    <key>HideSpeedTest</key>
-    <false/>
-    <key>HideCoverageMap</key>
-    <false/>
-    <key>HideNetworkHistory</key>
-    <false/>
-    <key>HideReal-timeMonitor</key>
-    <false/>
-    <key>HideHelp</key>
-    <false/>
-    <key>HideExport</key>
-    <false/>
-    <key>HideRunAll</key>
-    <false/>
-    <key>HideDebugExport</key>
-    <true/>
-</dict>
-</plist>
-```
 
-### Available Configuration Keys
-
-| Key | Description | Default |
-|-----|-------------|---------|
-| HideDashboard |  Hide dashboard overview | false |
-| HideNetworkScanner | Hide WiFi scanner tool | false |
-| HideSpeedTest | Hide speed testing tool | false |
-| HideCoverageMap | Hide coverage mapping tool | false |
-| HideNetworkHistory | Hide network test history | false |
-| HideReal-timeMonitor |  Hide real-time signal monitoring | false |
-| HideHelp | Hide help documentation | false |
-| HideExport | Hide export functionality | false |
-| HideRunAll | Hide "Run All Tests" button | false |
-| HideDebugExport | Hide debug export option | true |
-
-### Updated Configuration
-The configuration system has been updated to match all current sidebar sections and features. Make sure to use the exact key names shown above (including spaces) for proper functionality.
-
----
 
 ## Technical Details
 

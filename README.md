@@ -20,9 +20,11 @@ In my current role at a small college, we use a customized version of the applic
 
 [Example WiFi-Coverage-MapReport.pdf](https://github.com/user-attachments/files/21747000/Example.WiFi-Coverage-MapReport.pdf)
 
+
+
 **Here Example of User Report**
 
-
+[![Download Example Report](https://img.shields.io/badge/Download-ExampleReportForIT.txt-brightgreen)](https://github.com/hov172/WifDiagReport/raw/main/ExampleReportForIT.txt)
 
 
 ## Overview

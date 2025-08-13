@@ -16,6 +16,14 @@ In my current role at a small college, we use a customized version of the applic
 
 <img width="1440" height="809" alt="image" src="https://github.com/user-attachments/assets/ec024941-0983-4207-b595-0769c3a0751c" />
 
+**Here Example of Wifi Map Export**
+
+[Example WiFi-Coverage-MapReport.pdf](https://github.com/user-attachments/files/21747000/Example.WiFi-Coverage-MapReport.pdf)
+
+**Here Example of User Report**
+
+
+
 
 ## Overview
 

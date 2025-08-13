@@ -8,9 +8,14 @@ In my current role at a small college, we use a customized version of the applic
 
 # Wifi Diagnostics Report
 
-<img width="1677" height="1025" alt="main" src="https://github.com/user-attachments/assets/4b0a9eb4-ea3f-4f7f-86e8-c4addf526ccb" />
+<img width="1439" height="808" alt="image" src="https://github.com/user-attachments/assets/7fa21c04-c59a-4e64-8538-dda12e0f32d4" />
 
-<img width="1677" height="1018" alt="Scanning" src="https://github.com/user-attachments/assets/edd07ba4-cc55-4d22-8000-108b56ca9422" />
+
+<img width="1437" height="810" alt="image" src="https://github.com/user-attachments/assets/34e9ed06-e46b-4eda-8e77-22bbf4ee7ae5" />
+
+
+<img width="1440" height="809" alt="image" src="https://github.com/user-attachments/assets/ec024941-0983-4207-b595-0769c3a0751c" />
+
 
 ## Overview
 

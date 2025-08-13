@@ -16,16 +16,23 @@ In my current role at a small college, we use a customized version of the applic
 
 <img width="1440" height="809" alt="image" src="https://github.com/user-attachments/assets/ec024941-0983-4207-b595-0769c3a0751c" />
 
-**Here Example of Wifi Map Export**
+---
+
+**Here Example of IT Admin Wifi Map Export**
+
+This the report an IT team member would run to get WiFi Coverage MapReport of an Area with reported issues. 
 
 [Example WiFi-Coverage-MapReport.pdf](https://github.com/user-attachments/files/21747000/Example.WiFi-Coverage-MapReport.pdf)
 
+---
 
+**Non IT Memember Example of User Report** 
 
-**Here Example of User Report**
+The report the Student or user would email IT team.
 
 [![Download Example Report](https://img.shields.io/badge/Download-ExampleReportForIT.txt-brightgreen)](https://github.com/hov172/WifDiagReport/raw/main/ExampleReportForIT.txt)
 
+---
 
 ## Overview
 

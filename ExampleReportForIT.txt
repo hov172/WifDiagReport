@@ -1,0 +1,342 @@
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                IT DIAGNOSTIC REPORT                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+Generated: Wednesday, August 13, 2025 at 12:25:36 AM
+Report Type: Comprehensive Network Analysis for IT Support
+
+═══════════════════════════════════════════════════════════════════════════════════════
+CONTACT & LOCATION INFORMATION
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Contact Information:
+• Name: Example User
+• Email: user@school.edu
+• User ID: 345213
+• Phone: 917-555-1212
+
+Device Information:
+• Computer Name: jay172.local
+• Model: MacBook Pro (13-inch, M2, 2022)
+• OS Version: macOS Sequoia 15.6.0 (Build 24G84))
+Location Information:
+• Building: Main Dorm
+• Room Number: 234
+
+Coverage Survey Data:
+• Total Coverage Points: 5
+• Unique Access Points: 1
+• Roaming Events Detected: 0
+• Survey Period: Aug 11, 2025 at 11:41 PM to Aug 11, 2025 at 11:42 PM
+═══════════════════════════════════════════════════════════════════════════════════════
+EXECUTIVE SUMMARY
+═══════════════════════════════════════════════════════════════════════════════════════
+
+OVERALL NETWORK HEALTH: Excellent (92/100)
+
+Your WiFi connection quality is excellent for institutional use. Excellent signal strength with excellent signal-to-noise ratio indicates excellent connection reliability.
+
+═══════════════════════════════════════════════════════════════════════════════════════
+KEY FINDINGS
+═══════════════════════════════════════════════════════════════════════════════════════
+• ⚠️ High Network Congestion (33 networks detected) - Potential interference
+• ✅ Good Signal Strength - Device well-positioned for optimal connectivity
+• ✅ Sufficient Bandwidth - Speed adequate for most institutional applications
+• ✅ Strong Security - All networks using modern security protocols
+
+Coverage Analysis Findings:• Excellent Signal Quality: 5 locations (100.0%)
+
+═══════════════════════════════════════════════════════════════════════════════════════
+SIGNAL QUALITY ANALYSIS
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Overall Quality: Excellent
+Signal Strength: -50 dBm (Excellent)
+Signal-to-Noise Ratio: 46 dB (Excellent)
+Noise Level: -96 dBm
+Interference Level: Low
+Signal Stability: Current Reading
+Capacity Utilization: Low
+Roaming Readiness: Good
+
+Coverage Mapping Analysis:• Survey Coverage: 5 measurement locations
+• Signal Strength Range: -46 to -45 dBm (Average: -45 dBm)
+• SNR Range: 46 to 46 dB (Average: 46 dB)
+• Best Location: Point 2 (-45 dBm)
+• Weakest Location: Point 1 (-46 dBm)
+• Signal Consistency: 1 dB variation across surveyed area
+═══════════════════════════════════════════════════════════════════════════════════════
+PERFORMANCE ANALYSIS
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Overall Performance: Good
+Download Speed: 92.3 Mbps (Good)
+Upload Speed: 58.4 Mbps
+Latency: 18 ms (Excellent)
+Packet Loss: 0.3%
+Reliability Score: 97/100
+Trend Analysis: Performance stable
+
+Application Readiness Assessment:
+• Gaming: ✅ Ready
+• Video Streaming: ✅ Ready
+• Voice Calls: ✅ Ready
+• Large Downloads: ✅ Ready
+
+═══════════════════════════════════════════════════════════════════════════════════════
+NETWORK ENVIRONMENT ANALYSIS
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Congestion Level: Severe
+Security Grade: Excellent
+Hidden Networks: 0
+
+Interference Sources:
+• High network density
+• Channel overlap on 2.4GHz (channels 6, 11)
+
+Band Utilization:
+• 2.4GHz: 9 networks (High congestion)
+• 5GHz: 24 networks (High congestion)
+• 6GHz: 0 networks (Low congestion)
+
+Optimization Opportunities:
+• No specific opportunities identified
+
+═══════════════════════════════════════════════════════════════════════════════════════
+HARDWARE CAPABILITIES
+═══════════════════════════════════════════════════════════════════════════════════════
+
+WiFi Standard: WiFi 6 (802.11ax)
+Efficiency Rating: Fair
+
+Hardware Capabilities:
+• MCS Index: 3
+• Spatial Streams: 1
+• Channel Width: 40MHz
+• PHY Mode: 802.11ax
+
+Upgrade Opportunities:
+• Device supports single spatial stream (MIMO limitation)
+═══════════════════════════════════════════════════════════════════════════════════════
+COVERAGE MAPPING ANALYSIS
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Survey Overview:
+• Total Measurement Points: 5
+• Survey Duration: 46.0 minutes
+• Access Points Encountered: 1
+• Roaming Events: 0
+
+Signal Quality Distribution:• Excellent: 5 points (100.0%)
+
+Coverage Analysis by Location:• Point 5: -46 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:42 PM
+• Point 4: -45 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:41 PM
+• Point 3: -45 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:41 PM
+• Point 2: -45 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:41 PM
+• Point 1: -46 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:41 PM
+
+═══════════════════════════════════════════════════════════════════════════════════════
+IT RECOMMENDATIONS (Sorted by Priority)
+═══════════════════════════════════════════════════════════════════════════════════════
+🔴 CRITICAL - Environment
+Network Congestion
+
+High density of WiFi networks causing potential interference.
+Technical Details: 33 networks detected in vicinity
+
+Action Items:
+  • Perform site survey for optimal AP placement
+  • Optimize channel assignments
+  • Consider dedicated 5GHz deployment
+  • Implement load balancing across APs
+
+───────────────────────────────────────────────────────────────────────────────────────
+
+═══════════════════════════════════════════════════════════════════════════════════════
+TECHNICAL DEEP DIVE
+═══════════════════════════════════════════════════════════════════════════════════════
+
+=== COMPREHENSIVE TECHNICAL REPORT ===
+Generated: 2025-08-13 04:25:36 +0000
+
+=== DEVICE & SYSTEM INFORMATION ===
+Model: MacBook Pro (13-inch, M2, 2022)
+Machine Type: Mac14,7
+OS Version: macOS Sequoia 15.6.0 (Build 24G84))
+Computer Name: jay172.local
+CPU: Apple M2
+RAM: 16.0 GB
+
+=== CURRENT NETWORK CONNECTION ===
+Connection Status: Connected
+SSID: opm2_5G
+BSSID: fa:e2:c6:a8:d0:0a
+Active Interface: en0
+MAC Address: a4:cf:99:88:d3:df
+Local IP: 192.168.0.236
+Public IP: 67.85.71.46
+DNS Servers: 192.168.0.1
+
+=== SIGNAL ANALYSIS DETAILS ===
+Signal Strength: -50 dBm (Excellent)
+Noise Level: -96 dBm
+Signal-to-Noise Ratio: 46 dB (Excellent)
+Signal Quality: 100.0%
+Interference Level: Low
+Signal Stability: Current Reading
+Capacity Utilization: Low
+Roaming Readiness: Good
+
+=== WIFI TECHNICAL SPECIFICATIONS ===
+Channel: 149
+Band: 5 GHz
+Security: WPA2 Personal
+TX Rate: 275 Mbps
+Link Speed: 275 Mbps
+MCS Index: 3 (MCS 3 (Basic rate))
+Spatial Streams: 1 (1 spatial stream)
+Channel Width: 40MHz
+PHY Mode: 802.11ax
+Advanced Status: MCS 3 • 1SS • 40MHz
+
+=== PERFORMANCE METRICS ===
+Overall Performance: Good
+Download Speed: 92.3 Mbps (Good)
+Upload Speed: 58.4 Mbps
+Latency: 18 ms (Excellent)
+Packet Loss: 0.3%
+Reliability Score: 97/100
+Trend Analysis: Performance stable
+
+Application Readiness:
+• Gaming: ✅ Ready
+• Video Streaming: ✅ Ready
+• Voice Calls: ✅ Ready
+• Large Downloads: ✅ Ready
+
+=== NETWORK ENVIRONMENT ANALYSIS ===
+Congestion Level: Severe
+Security Grade: Excellent
+Hidden Networks: 0
+Interference Sources: High network density, Channel overlap on 2.4GHz (channels 6, 11)
+
+Band Utilization:
+• 2.4GHz: 9 networks (High congestion)
+• 5GHz: 24 networks (High congestion)
+• 6GHz: 0 networks (Low congestion)
+
+Optimization Opportunities:
+• No specific opportunities identified
+
+=== HARDWARE CAPABILITIES ===
+WiFi Standard: WiFi 6 (802.11ax)
+Efficiency Rating: Fair
+Hardware Capabilities: MCS Index: 3, Spatial Streams: 1, Channel Width: 40MHz, PHY Mode: 802.11ax
+
+Upgrade Opportunities:
+• Device supports single spatial stream (MIMO limitation)
+
+=== DETECTED WIFI NETWORKS ===
+Total networks found: 33
+
+SSID                     Signal   Noise    SNR    Ch   Band     Security        Vendor
+----------------------------------------------------------------------------------------------------
+Helium                   -39 dBm  -96 dBm  57 dB  Ch 6 2.4 GHz  WPA3 Enterprise Unknown
+Wayru Mobile             -44 dBm  -96 dBm  52 dB  Ch 4 5 GHz    WPA2 Enterprise Unknown
+Wayru OpenRoaming        -44 dBm  -96 dBm  52 dB  Ch 4 5 GHz    WPA2 Enterprise Unknown
+Wayru Operator           -44 dBm  -96 dBm  52 dB  Ch 4 5 GHz    WPA2 Personal   Unknown
+.Wayru WiFi              -44 dBm  -96 dBm  52 dB  Ch 4 5 GHz    Open            Unknown
+opm2                     -46 dBm  -96 dBm  50 dB  Ch 1 2.4 GHz  WPA2 Personal   Unknown
+Helium                   -47 dBm  -96 dBm  49 dB  Ch 1 5 GHz    WPA3 Enterprise Unknown
+opm_MobileAPs            -48 dBm  -96 dBm  48 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+opm2_5G                  -48 dBm  -96 dBm  48 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+opm2_5G2                 -48 dBm  -96 dBm  48 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+DIRECT-c5-HP M283 Lase.. -49 dBm  -96 dBm  47 dB  Ch 6 2.4 GHz  WPA2 Personal   Unknown
+Verizon_Jussep09         -52 dBm  -96 dBm  44 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+Helium                   -52 dBm  -96 dBm  44 dB  Ch 1 5 GHz    WPA3 Enterprise Unknown
+MX231x_6A3F5B            -54 dBm  -96 dBm  42 dB  Ch 1 2.4 GHz  WPA2 Personal   Unknown
+WIVU-FC27A213AB66        -60 dBm  -96 dBm  36 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+DIRECT-wG-FireTV_c65d    -60 dBm  -96 dBm  36 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+MyAltice ab47d3          -62 dBm  -96 dBm  34 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+Fios-VyqZ6               -62 dBm  -96 dBm  34 dB  Ch 6 2.4 GHz  WPA2 Personal   Unknown
+MyOptimum 358e17         -65 dBm  -96 dBm  31 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+7f09c2_5g                -66 dBm  -96 dBm  30 dB  Ch 4 5 GHz    WPA2 Personal   Unknown
+Helium                   -67 dBm  -96 dBm  29 dB  Ch 3 5 GHz    WPA3 Enterprise Unknown
+optimum                  -67 dBm  -96 dBm  29 dB  Ch 4 5 GHz    WPA2 Enterprise Unknown
+GriffWireless_5GHz       -67 dBm  -96 dBm  29 dB  Ch 4 5 GHz    WPA2 Personal   Cisco/Linksys
+Fios-VyqZ6               -70 dBm  -96 dBm  26 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+GriffWireless            -71 dBm  -96 dBm  25 dB  Ch 2 2.4 GHz  WPA2 Personal   Cisco/Linksys
+Verizon_BJ4G9H           -72 dBm  -96 dBm  24 dB  Ch 1 2.4 GHz  WPA2 Personal   Unknown
+FiOS-SGRZV               -74 dBm  -96 dBm  22 dB  Ch 1 2.4 GHz  WPA2 Personal   Unknown
+Fios-VyqZ6               -76 dBm  -96 dBm  20 dB  Ch 5 5 GHz    WPA2 Personal   Unknown
+FiOS-SGRZV               -77 dBm  -96 dBm  19 dB  Ch 4 5 GHz    WPA2 Personal   Unknown
+NVR083a2f183551          -79 dBm  -96 dBm  17 dB  Ch 1 2.4 GHz  WPA2 Personal   Unknown
+Fios-jh2CB               -80 dBm  -96 dBm  16 dB  Ch 5 5 GHz    WPA2 Personal   Unknown
+Fios-jh2CB               -81 dBm  -96 dBm  15 dB  Ch 1 5 GHz    WPA2 Personal   Unknown
+MyOptimum 4f0949         -87 dBm  -96 dBm  9 dB   Ch 4 5 GHz    WPA2 Personal   Unknown
+
+
+=== COVERAGE SURVEY DATA ===
+Total coverage points: 5
+Unique access points: 1
+Roaming events detected: 0
+
+Recent coverage measurements:
+• Point 5: -46 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:42 PM
+• Point 4: -45 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:41 PM
+• Point 3: -45 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:41 PM
+• Point 2: -45 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:41 PM
+• Point 1: -46 dBm (Excellent) - opm2_5G2 at Aug 11, 2025 at 11:41 PM
+
+
+=== NETWORK PERFORMANCE HISTORY ===
+Speed test results: 2
+
+1. Aug 13, 2025 at 12:21 AM - opm2_5G
+   Download: 88.9 Mbps, Upload: 45.8 Mbps, Latency: 0 ms
+2. Aug 13, 2025 at 12:24 AM - opm2_5G
+   Download: 92.3 Mbps, Upload: 58.4 Mbps, Latency: 18 ms
+
+
+=== TECHNICAL REFERENCE GUIDE ===
+
+Signal Strength (RSSI) Guidelines:
+• Excellent: -50 dBm or higher - Optimal performance for all applications
+• Good: -51 to -67 dBm - Suitable for most applications
+• Fair: -68 to -80 dBm - May experience reduced performance
+• Poor: Below -80 dBm - Significant performance issues likely
+
+Signal-to-Noise Ratio (SNR) Guidelines:
+• Excellent: 40 dB or higher - Minimal interference
+• Good: 25-39 dB - Acceptable interference levels
+• Fair: 10-24 dB - Noticeable interference impact
+• Poor: Below 10 dB - Severe interference affecting performance
+
+WiFi Standards Reference:
+• WiFi 6E (802.11ax): Latest standard, supports 6GHz band
+• WiFi 6 (802.11ax): High efficiency, improved performance in dense environments
+• WiFi 5 (802.11ac): Mature standard, good performance on 5GHz
+• WiFi 4 (802.11n): Legacy standard, may limit performance
+
+Channel Width Impact:
+• 160MHz: Maximum throughput, requires clean spectrum
+• 80MHz: High throughput, good balance of speed and compatibility
+• 40MHz: Moderate throughput, widely supported
+• 20MHz: Basic throughput, most compatible
+
+Security Protocol Recommendations:
+• WPA3: Latest security standard, recommended for new deployments
+• WPA2: Mature security, acceptable for most environments
+• WPA/WEP: Legacy protocols, should be upgraded for security
+• Open: No security, only appropriate for guest/public networks
+
+═══════════════════════════════════════════════════════════════════════════════════════
+REPORT FOOTER
+═══════════════════════════════════════════════════════════════════════════════════════
+
+This report was generated by WiFi Diagnostics Tool
+For technical support, please provide this complete report to your IT department
+Report ID: C739A916-F25D-4CF3-AEDC-97E1EB120201
+
+© 2025 Jesus M. Ayala - WiFi Diagnostics Report System

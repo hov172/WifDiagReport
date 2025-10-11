@@ -6,6 +6,12 @@ WiFi Diag Report enables IT staff to perform Wi-Fi tests and export detailed rep
 
 In my current role at a small college, we use a customized version of the application that hides advanced IT-level tools while allowing students to generate file to be emailed the diagnostic reports to the Help Desk. This process gives IT staff an effective starting point for troubleshooting Wi-Fi issues on student devices, serving as a reference before dispatching an IT-managed computer to the student’s location for further comparison and analysis. These customizations can be implemented by modifying the application’s configuration file.
 
+I create a PS (Powershell Script) and a Windows App that does something similar.
+
+- Powershell Script: https://github.com/hov172/PS_WI-FI_Analyzer
+- Windows: https://github.com/hov172/WinWiFiAnalyzer
+
+  
 # Wifi Diagnostics Report
 
 <img width="1439" height="808" alt="image" src="https://github.com/user-attachments/assets/7fa21c04-c59a-4e64-8538-dda12e0f32d4" />

@@ -52,7 +52,7 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ## What's New
 
-### Version 4.2 Build 1.0 - Run all test Report update
+### Version 4.2 Build 1.1 - Run all test Report update
 
 #### **🚀 New IT Analysis Engine (NEW)**
 - **🆕 Run All Test IT Diagnostic Reports** - Professional-grade analysis combining signal quality, performance metrics, environment assessment, and hardware capabilities

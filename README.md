@@ -52,9 +52,43 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ## What's New
 
-### Version 4.2 Build 1.1 - Run all test Report update
+### Version 4.4 Build 1.5 - Multi-AP Mapping, App Store Readiness & Sandbox-Safe Tests
 
-#### **🚀 New IT Analysis Engine (NEW)**
+#### **📡 Multi-AP Capture & Overlap Mapping**
+- **🆕 Multi-AP capture** - Each new measurement point runs a background scan and stores every visible AP's signal (SSID, BSSID, RSSI, channel, band) on the point; saved maps stay backward-compatible
+- **🆕 Heatmap layers** - A layer menu next to the Heatmap toggle switches between the connected network, any individual AP, or **Overlap zones** (teal = 1 usable AP, amber = 2, red = 3+ at ≥ −70 dBm), synced across both map views
+- **🆕 Overlap band filter** - Restrict the overlap count to 2.4/5/6 GHz radios so one multi-band router doesn't inflate the count
+- **🆕 Sticky point selection** - The last point you click keeps a highlight ring (shared across both map views), and the map overlay shows "Selected" with its details
+- **🆕 Reports follow the selected layer** - The coverage-map PDF/print renders whatever heatmap layer is active on screen (connected / per-AP / overlap with band filter), with a layer caption and an adaptive overlap legend
+- **🆕 Full-screen quick add** - Clicking an empty area in the full-screen map drops a point immediately (auto-named, renameable), matching the standard map
+
+#### **🏪 App Store Submission Fixes**
+- Replaced iOS-only entitlements (`network.wifi-info`, `network.dns`, `system-information.read`) with the correct macOS set: App Sandbox, outgoing network, location, and user-selected files
+- The app's Info.plist is now properly processed at build time (was previously copied raw into Resources, causing "nested bundle" validation errors) — location-permission strings now actually ship, and the ATS arbitrary-loads exception is removed
+- Scanner CSV export now uses a save panel (sandbox-safe) instead of writing directly to the Desktop
+
+#### **🛡️ Sandbox-Safe Network Tests**
+- **🆕 UDP fallback for latency & packet loss** - The App Sandbox blocks ICMP sockets, so when ICMP gets no replies the tests automatically fall back to UDP DNS round-trips (Cloudflare resolver) — still a real measurement, labeled "(UDP)" in results
+- **Honest semantics** - Zero replies on every path now reports "Test Failed" instead of a false "100% packet loss"
+
+### Version 4.3 Build 1.4 - Real Network Measurements & Signal Heatmap
+
+#### **📡 Real Network Tests (Replaces Simulated Results)**
+- **🆕 Real Speed Test** - Actual HTTP throughput measured against Cloudflare's speed-test endpoints using multiple concurrent streams (`NetworkDiagnosticsService.swift`); results reflect your true connection, not estimates
+- **🆕 Real Latency Test** - True ICMP round-trip measurement (unprivileged datagram sockets, the Apple SimplePing mechanism) against an internet reference host with automatic local-gateway fallback; reports average and jitter
+- **🆕 Real Packet Loss Test** - Sends a burst of 20 ICMP echoes and counts actual replies
+- **Honest failure states** - Tests that can't run report "Test Failed" instead of fabricated numbers
+
+#### **🔥 Signal Heatmap (Coverage Map)**
+- **🆕 Interpolated coverage heatmap** - Inverse-distance-weighted (IDW) heatmap rendered over the floor plan from your measurement points, bounded to the surveyed area (unmeasured space stays empty)
+- **🆕 Heatmap in reports** - New "Include signal heatmap overlay" print/PDF option; the dialog default follows the on-screen heatmap toggle
+- Toggleable in both the standard and full-screen map views; color ramp matches the existing signal categories (green → blue → orange → red)
+
+#### **🖱️ Interaction & Honesty Improvements**
+- **Single-click a coverage point** to open the rich details card (with inline rename) in both map views; right-click menu unchanged
+- Point quality badge spells out the full category (Excellent/Good/Fair/Poor) on hover instead of just a letter
+- Scanner values that CoreWLAN can't measure per-network (noise, SNR, channel width, PHY mode) are now labeled "(est.)"
+
 - **🆕 Run All Test IT Diagnostic Reports** - Professional-grade analysis combining signal quality, performance metrics, environment assessment, and hardware capabilities
 
 ### Version 4.1 Build 1.2 - IT Analysis Engine & Professional Reporting
@@ -108,6 +142,10 @@ Built for IT professionals, support staff, students, and power users, it empower
 - **🆕 Error Prevention** - Enhanced error handling and crash prevention in real-time monitoring
 - **🆕 System Integration** - Better CoreWLAN framework integration with robust fallback mechanisms
 - **🆕 UI/UX Polish** - Fixed visual inconsistencies and improved user feedback systems
+
+### Version 4.2 Build 1.1 - Run all test Report update
+
+#### **🚀 New IT Analysis Engine (NEW)**
 
 ### Version 4.0 Build 1.0 - Advanced WiFi Analytics & Enhanced Data Collection
 

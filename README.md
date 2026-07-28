@@ -52,7 +52,7 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ## What's New
 
-### Version 4.4 Build 1.5 - Multi-AP Mapping, App Store Readiness & Sandbox-Safe Tests
+### Version 4.4 Build 1.5 - Multi-AP Mapping
 
 #### **📡 Multi-AP Capture & Overlap Mapping**
 - **🆕 Multi-AP capture** - Each new measurement point runs a background scan and stores every visible AP's signal (SSID, BSSID, RSSI, channel, band) on the point; saved maps stay backward-compatible

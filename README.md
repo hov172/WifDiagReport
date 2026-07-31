@@ -10,6 +10,7 @@ I create a PS (Powershell Script) and a Windows App that does something similar.
 
 - Powershell Script: https://github.com/hov172/PS_WI-FI_Analyzer
 - Windows: https://github.com/hov172/WinWiFiAnalyzer
+- IOS Beta Test: https://testflight.apple.com/join/hDPGsHzd
 
   
 # Wifi Diagnostics Report

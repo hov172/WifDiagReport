@@ -11,6 +11,7 @@ I create a PS (Powershell Script), IOS and a Windows App that does something sim
 - Powershell Script: https://github.com/hov172/PS_WI-FI_Analyzer
 - Windows: https://github.com/hov172/WinWiFiAnalyzer
 - IOS Beta Test: https://testflight.apple.com/join/hDPGsHzd
+- Macos: [https://github.com/hov172/WinWiFiAnalyzer]
 
   
 # Wifi Diagnostics Report

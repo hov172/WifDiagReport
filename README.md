@@ -1,659 +1,747 @@
-WiFi Diag Report is a macOS application designed for Wi-Fi and network diagnostics, system information retrieval, and technical troubleshooting. Built for IT professionals, support teams, students, and power users, it provides the ability to analyze a Mac’s connectivity, scan wireless networks, map coverage, measure speeds, and export comprehensive diagnostic reports with ease.
+# 📡 WiFi Diag Report
 
-# Intended Use:
+**Professional Wi-Fi diagnostics, network analysis, coverage mapping, and Help Desk reporting for macOS.**
 
-WiFi Diag Report enables IT staff to perform Wi-Fi tests and export detailed reports to identify potential sources of interference or connectivity issues in the surrounding environment.
+WiFi Diag Report is a free macOS application designed for Wi-Fi and network diagnostics, system information retrieval, coverage analysis, and technical troubleshooting.
 
-In my current role at a small college, we use a customized version of the application that hides advanced IT-level tools while allowing students to generate file to be emailed the diagnostic reports to the Help Desk. This process gives IT staff an effective starting point for troubleshooting Wi-Fi issues on student devices, serving as a reference before dispatching an IT-managed computer to the student’s location for further comparison and analysis. These customizations can be implemented by modifying the application’s configuration file.
+Built for **IT professionals, Help Desk teams, students, and power users**, the application can analyze a Mac's connectivity, scan surrounding wireless networks, monitor signal quality, test network performance, map Wi-Fi coverage, and generate detailed diagnostic reports.
 
-I create a PS (Powershell Script), IOS and a Windows App that does something similar.
-
-- Powershell Script: https://github.com/hov172/PS_WI-FI_Analyzer
-- Windows: https://github.com/hov172/WinWiFiAnalyzer
-- IOS Beta Test: https://testflight.apple.com/join/hDPGsHzd
-- Macos: https://github.com/hov172/WinWiFiAnalyzer/releases/download/Windows_Wifi_Report/Wi.Fi.Analyzer.dmg
-  - (Matches Windows Version Layout) from WinWiFiAnalyzer repo.
-
-  
-# Wifi Diagnostics Report
-
-<img width="1439" height="808" alt="image" src="https://github.com/user-attachments/assets/7fa21c04-c59a-4e64-8538-dda12e0f32d4" />
-
-
-<img width="1437" height="810" alt="image" src="https://github.com/user-attachments/assets/34e9ed06-e46b-4eda-8e77-22bbf4ee7ae5" />
-
-
-<img width="1440" height="809" alt="image" src="https://github.com/user-attachments/assets/ec024941-0983-4207-b595-0769c3a0751c" />
+> **System Requirement:** macOS 13.0 (Ventura) or newer.
 
 ---
 
-**Here Example of IT Admin Wifi Map Export**
+## 🎯 Intended Use
 
-This the report an IT team member would run to get WiFi Coverage MapReport of an Area with reported issues. 
+WiFi Diag Report enables IT staff to perform Wi-Fi tests and export detailed reports that can help identify interference, weak coverage, performance problems, configuration issues, and other potential causes of connectivity problems.
 
-[Example WiFi-Coverage-MapReport.pdf](https://github.com/user-attachments/files/21747000/Example.WiFi-Coverage-MapReport.pdf)
+### 🏫 Help Desk / Higher Education Workflow
+
+In my current environment at a small college, we use a customized version of WiFi Diag Report designed specifically for student troubleshooting.
+
+Advanced IT-level tools can be hidden while still allowing students or other end users to:
+
+1. Run approved Wi-Fi and network diagnostics.
+2. Collect device and connection information.
+3. Generate a standardized diagnostic report.
+4. Email the report to the Help Desk.
+
+The report gives IT staff a useful technical baseline before dispatching a technician or an IT-managed computer to the reported location for comparison testing.
+
+This helps determine whether a problem is related to:
+
+* The student's device
+* Wi-Fi signal strength
+* Access point coverage
+* Network performance
+* Wireless interference
+* Device hardware capabilities
+* Configuration
+* The surrounding RF environment
+
+Feature visibility can be controlled through the application's `Configuration.plist`, allowing organizations to create simplified deployments without maintaining a separate application build.
 
 ---
 
-**Non IT Memember Example of User Report** 
+# 🌐 Multi-Platform Wi-Fi Analyzer Project
 
-The report the Student or user would email IT team.
+WiFi Diag Report is part of a larger collection of Wi-Fi diagnostic tools I have developed for **PowerShell, Windows, macOS, and iOS/iPadOS**.
+
+The goal is to provide similar Wi-Fi troubleshooting and reporting capabilities across platforms while taking advantage of the networking APIs available on each operating system.
+
+| Platform            | Project                           | Access                                                                                                             |
+| ------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| 🖥️ **PowerShell**  | PS Wi-Fi Analyzer                 | [GitHub](https://github.com/hov172/PS_WI-FI_Analyzer)                                                              |
+| 🪟 **Windows**      | WinWiFiAnalyzer                   | [GitHub](https://github.com/hov172/WinWiFiAnalyzer)                                                                |
+| 📱 **iOS / iPadOS** | Wi-Fi Analyzer Beta               | [Apple TestFlight](https://testflight.apple.com/join/hDPGsHzd)                                                     |
+| 🍎 **macOS**        | Wi-Fi Analyzer — Windows-style UI | [Download DMG](https://github.com/hov172/WinWiFiAnalyzer/releases/download/Windows_Wifi_Report/Wi.Fi.Analyzer.dmg) |
+| 🍎 **macOS**        | WiFi Diag Report                  | This Project                                                                                                       |
+
+### 🖥️ PowerShell
+
+**PS_WI-FI_Analyzer** provides Wi-Fi diagnostics and reporting directly through Windows PowerShell.
+
+It is designed for administrators and technicians who want a lightweight script-based diagnostic tool without requiring a full graphical application.
+
+**Repository:**
+https://github.com/hov172/PS_WI-FI_Analyzer
+
+### 🪟 Windows
+
+**WinWiFiAnalyzer** provides a graphical Windows application for Wi-Fi diagnostics, network analysis, troubleshooting, and reporting.
+
+**Repository:**
+https://github.com/hov172/WinWiFiAnalyzer
+
+### 📱 iOS / iPadOS
+
+The iOS/iPadOS version is currently available for beta testing through Apple TestFlight.
+
+**Join the Beta:**
+https://testflight.apple.com/join/hDPGsHzd
+
+Because Apple restricts access to certain low-level Wi-Fi information on iOS/iPadOS, some diagnostics available on Windows and macOS cannot be implemented identically on iPhone or iPad.
+
+### 🍎 macOS — Windows Layout Version
+
+A separate macOS Wi-Fi Analyzer is available that follows the layout and workflow of **WinWiFiAnalyzer**, providing a more consistent interface for users moving between Windows and macOS.
+
+**Download DMG:**
+https://github.com/hov172/WinWiFiAnalyzer/releases/download/Windows_Wifi_Report/Wi.Fi.Analyzer.dmg
+
+---
+
+# 🖼️ WiFi Diagnostics Report
+
+<img width="1439" height="808" alt="WiFi Diag Report" src="https://github.com/user-attachments/assets/7fa21c04-c59a-4e64-8538-dda12e0f32d4" />
+
+<img width="1437" height="810" alt="WiFi Diag Report" src="https://github.com/user-attachments/assets/34e9ed06-e46b-4eda-8e77-22bbf4ee7ae5" />
+
+<img width="1440" height="809" alt="WiFi Diag Report" src="https://github.com/user-attachments/assets/ec024941-0983-4207-b595-0769c3a0751c" />
+
+---
+
+# 📊 Example Reports
+
+## IT Administrator — Wi-Fi Coverage Map
+
+An IT team member can survey an area with reported Wi-Fi problems and generate a coverage-map report containing collected measurements and visual coverage information.
+
+[Example WiFi Coverage Map Report](https://github.com/user-attachments/files/21747000/Example.WiFi-Coverage-MapReport.pdf)
+
+## Student / End-User Diagnostic Report
+
+Students or other non-IT users can generate a simplified diagnostic report and send it directly to the Help Desk.
 
 [![Download Example Report](https://img.shields.io/badge/Download-ExampleReportForIT.txt-brightgreen)](https://github.com/hov172/WifDiagReport/raw/main/ExampleReportForIT.txt)
 
 ---
 
-## Overview
+# 🆕 What's New
 
-**Wifi Diagnostics Report** is a professional-grade, free macOS app for WiFi/network diagnostics, system info, and technical troubleshooting.
+## Version 4.4 Build 1.5 — Multi-AP Mapping
 
-Built for IT professionals, support staff, students, and power users, it empowers anyone to analyze their Mac's connectivity, scan WiFi, map coverage, check speeds, and export rich diagnostics with ease.
+### 📡 Multi-AP Capture & Overlap Mapping
 
-> **Note:** This app requires macOS 13.0 (Ventura) or newer.
+* **Multi-AP Capture** — Every measurement point can perform a background scan and store all visible APs, including:
 
----
+  * SSID
+  * BSSID
+  * RSSI
+  * Channel
+  * Band
 
-## What's New
+* **Heatmap Layers** — Switch between:
 
-### Version 4.4 Build 1.5 - Multi-AP Mapping
+  * Connected network
+  * Individual access points
+  * AP overlap zones
 
-#### **📡 Multi-AP Capture & Overlap Mapping**
-- **🆕 Multi-AP capture** - Each new measurement point runs a background scan and stores every visible AP's signal (SSID, BSSID, RSSI, channel, band) on the point; saved maps stay backward-compatible
-- **🆕 Heatmap layers** - A layer menu next to the Heatmap toggle switches between the connected network, any individual AP, or **Overlap zones** (teal = 1 usable AP, amber = 2, red = 3+ at ≥ −70 dBm), synced across both map views
-- **🆕 Overlap band filter** - Restrict the overlap count to 2.4/5/6 GHz radios so one multi-band router doesn't inflate the count
-- **🆕 Sticky point selection** - The last point you click keeps a highlight ring (shared across both map views), and the map overlay shows "Selected" with its details
-- **🆕 Reports follow the selected layer** - The coverage-map PDF/print renders whatever heatmap layer is active on screen (connected / per-AP / overlap with band filter), with a layer caption and an adaptive overlap legend
-- **🆕 Full-screen quick add** - Clicking an empty area in the full-screen map drops a point immediately (auto-named, renameable), matching the standard map
+* **Overlap Visualization**
 
-#### **🏪 App Store Submission Fixes**
-- Replaced iOS-only entitlements (`network.wifi-info`, `network.dns`, `system-information.read`) with the correct macOS set: App Sandbox, outgoing network, location, and user-selected files
-- The app's Info.plist is now properly processed at build time (was previously copied raw into Resources, causing "nested bundle" validation errors) — location-permission strings now actually ship, and the ATS arbitrary-loads exception is removed
-- Scanner CSV export now uses a save panel (sandbox-safe) instead of writing directly to the Desktop
+  * 1 usable AP
+  * 2 usable APs
+  * 3+ usable APs
+  * Uses a ≥ −70 dBm usable-signal threshold
 
-#### **🛡️ Sandbox-Safe Network Tests**
-- **🆕 UDP fallback for latency & packet loss** - The App Sandbox blocks ICMP sockets, so when ICMP gets no replies the tests automatically fall back to UDP DNS round-trips (Cloudflare resolver) — still a real measurement, labeled "(UDP)" in results
-- **Honest semantics** - Zero replies on every path now reports "Test Failed" instead of a false "100% packet loss"
+* **Band Filtering** — Analyze AP overlap independently for:
 
-### Version 4.3 Build 1.4 - Real Network Measurements & Signal Heatmap
+  * 2.4 GHz
+  * 5 GHz
+  * 6 GHz
 
-#### **📡 Real Network Tests (Replaces Simulated Results)**
-- **🆕 Real Speed Test** - Actual HTTP throughput measured against Cloudflare's speed-test endpoints using multiple concurrent streams (`NetworkDiagnosticsService.swift`); results reflect your true connection, not estimates
-- **🆕 Real Latency Test** - True ICMP round-trip measurement (unprivileged datagram sockets, the Apple SimplePing mechanism) against an internet reference host with automatic local-gateway fallback; reports average and jitter
-- **🆕 Real Packet Loss Test** - Sends a burst of 20 ICMP echoes and counts actual replies
-- **Honest failure states** - Tests that can't run report "Test Failed" instead of fabricated numbers
+* **Sticky Point Selection** — Selected survey points remain highlighted across map views.
 
-#### **🔥 Signal Heatmap (Coverage Map)**
-- **🆕 Interpolated coverage heatmap** - Inverse-distance-weighted (IDW) heatmap rendered over the floor plan from your measurement points, bounded to the surveyed area (unmeasured space stays empty)
-- **🆕 Heatmap in reports** - New "Include signal heatmap overlay" print/PDF option; the dialog default follows the on-screen heatmap toggle
-- Toggleable in both the standard and full-screen map views; color ramp matches the existing signal categories (green → blue → orange → red)
+* **Layer-Aware Reports** — Coverage-map PDF and print reports follow the currently selected heatmap layer.
 
-#### **🖱️ Interaction & Honesty Improvements**
-- **Single-click a coverage point** to open the rich details card (with inline rename) in both map views; right-click menu unchanged
-- Point quality badge spells out the full category (Excellent/Good/Fair/Poor) on hover instead of just a letter
-- Scanner values that CoreWLAN can't measure per-network (noise, SNR, channel width, PHY mode) are now labeled "(est.)"
+* **Full-Screen Quick Add** — Add measurement points directly from the full-screen map.
 
-- **🆕 Run All Test IT Diagnostic Reports** - Professional-grade analysis combining signal quality, performance metrics, environment assessment, and hardware capabilities
+### 🏪 App Store & Sandbox Improvements
 
-### Version 4.1 Build 1.2 - IT Analysis Engine & Professional Reporting
+* Correct macOS App Sandbox entitlements
+* Outgoing network access
+* Location support
+* User-selected file access
+* Correct Info.plist processing
+* Improved App Store validation compatibility
+* Sandbox-safe scanner CSV exports
+* Removed unnecessary ATS arbitrary-load exceptions
 
-#### **🚀 New IT Analysis Engine (NEW)**
-- **🆕 Comprehensive IT Diagnostic Reports** - Professional-grade analysis combining signal quality, performance metrics, environment assessment, and hardware capabilities
-- **🆕 Executive Summary Generation** - High-level overviews for IT management with overall network health scores and key findings
-- **🆕 IT-Focused Recommendations** - Prioritized action items with technical details and troubleshooting steps for help desk staff
-- **🆕 Technical Deep Dive Reports** - Detailed technical analysis with device specifications, network environment, and historical data
-- **🆕 Automated Analysis Engine** - Intelligent assessment of signal quality, performance bottlenecks, and optimization opportunities
+### 🛡️ Sandbox-Safe Network Testing
 
-#### **📊 Enhanced Hardware Analysis (NEW)**
-- **🆕 Hardware Capability Assessment** - Comprehensive evaluation of WiFi standards, spatial streams, and device limitations
-- **🆕 Efficiency Rating System** - Automated hardware performance grading based on MCS index, NSS, and channel width capabilities
-- **🆕 Upgrade Opportunity Identification** - Specific recommendations for hardware improvements and compatibility assessments
-- **🆕 Inventory Management Support** - Detailed hardware specifications for asset tracking and lifecycle planning
-- **🆕 WiFi Standard Evolution Tracking** - Clear identification of WiFi 4/5/6 capabilities and performance implications
+When ICMP testing is unavailable because of App Sandbox restrictions, WiFi Diag Report can fall back to **UDP DNS round-trip measurements**.
 
-#### **🔧 Professional Export Enhancement (NEW)**
-- **🆕 Multi-Format IT Reports** - Comprehensive diagnostic exports combining technical analysis with executive summaries
-- **🆕 Help Desk Integration** - Structured reports designed for IT support workflows and ticket management
-- **🆕 Technical Reference Integration** - Built-in guides for signal strength, security protocols, and WiFi standards
-- **🆕 Historical Data Integration** - Coverage mapping and performance history automatically included in reports
-- **🆕 Location-Aware Reporting** - Optional building/room information for site-specific troubleshooting
+Tests clearly identify UDP-based measurements instead of presenting them as ICMP results.
 
-#### **📱 Enhanced Dashboard Integration**
-- **🆕 IT Analysis Quick Actions** - Direct access to comprehensive diagnostic report generation
-- **🆕 Hardware Status Cards** - Real-time display of device capabilities and efficiency ratings
-- **🆕 Analysis Summary Display** - Key findings and recommendations prominently featured
-- **🆕 One-Click Report Generation** - Streamlined workflow for creating professional IT reports
+If no valid measurement can be collected, the application reports:
 
-### Version 4.0 Build 1.2 - Performance Optimizations & Stability Improvements
+**Test Failed**
 
-#### **🚀 Real-Time Monitoring Performance Fixes**
-- **🆕 Fixed SwiftUI State Management** - Eliminated "Modifying state during view update" errors that caused undefined behavior
-- **🆕 Optimized Chart Rendering** - Resolved filtering issues that prevented signal data from displaying in real-time charts
-- **🆕 Enhanced Data Flow** - Streamlined filtering logic with proper computed property implementation for smooth UI updates
-- **🆕 Improved User Interface Stability** - Fixed invalid SF Symbols and UI rendering issues for better visual consistency
-- **🆕 Enhanced Debug Logging** - Comprehensive diagnostic output for troubleshooting real-time monitoring performance
-
-#### **📊 Enhanced Real-Time Signal Monitoring**
-- **🆕 Smooth Chart Updates** - Fixed filtering algorithms to ensure all collected data points display correctly in charts
-- **🆕 Proper Time Range Filtering** - "Last 1 minute", "Last 5 minutes", and "All data" options now work reliably
-- **🆕 Performance Optimization** - Reduced computational overhead with intelligent caching and debouncing
-- **🆕 Reliable Data Collection** - Enhanced timestamp handling ensures accurate time-based filtering
-- **🆕 Visual Consistency** - Fixed chart rendering issues with proper RSSI value display and color coding
-
-#### **🔧 Technical Architecture Improvements**
-- **🆕 SwiftUI Best Practices** - Eliminated state modifications during view updates following Apple's guidelines
-- **🆕 Memory Optimization** - Improved data management for long-running monitoring sessions
-- **🆕 Error Prevention** - Enhanced error handling and crash prevention in real-time monitoring
-- **🆕 System Integration** - Better CoreWLAN framework integration with robust fallback mechanisms
-- **🆕 UI/UX Polish** - Fixed visual inconsistencies and improved user feedback systems
-
-### Version 4.2 Build 1.1 - Run all test Report update
-
-#### **🚀 New IT Analysis Engine (NEW)**
-
-### Version 4.0 Build 1.0 - Advanced WiFi Analytics & Enhanced Data Collection
-
-#### **🚀 Enhanced WiFi Data Collection**
-- **🆕 MCS Index Tracking** - Modulation and Coding Scheme analysis for precise data rate understanding
-- **🆕 Spatial Streams (NSS) Detection** - Number of spatial streams monitoring for MIMO performance analysis
-- **🆕 Channel Width Monitoring** - 20MHz, 40MHz, 80MHz, 160MHz channel width detection
-- **🆕 PHY Mode Analysis** - 802.11n/ac/ax (Wi-Fi 4/5/6) protocol detection and reporting
-- **🆕 Advanced System Profiler Integration** - Deep system-level WiFi metrics parsing for comprehensive analysis
-
-#### **📊 Enhanced Coverage Mapping**
-- **🆕 Extended Measurement Data** - Coverage points now capture MCS Index, Spatial Streams, Channel Width, and PHY Mode
-- **🆕 Advanced Point Information** - Comprehensive technical data display in coverage point cards and popups
-- **🆕 Enhanced CSV Export** - Updated data export includes all new MCS/NSS/PHY fields for professional analysis
-- **🆕 Professional WiFi Planning** - Enterprise-grade data collection suitable for RF planning and optimization
-
-#### **🎛️ Enhanced Dashboard Experience**
-- **🆕 Advanced WiFi Metrics Card** - Dedicated section showing MCS Index, Spatial Streams, Channel Width, PHY Mode, TX Rate, RSSI, Noise, and SNR
-- **🆕 Intelligent MCS Descriptions** - User-friendly explanations of Modulation and Coding Scheme values
-- **🆕 NSS Stream Analysis** - Clear spatial stream information with performance implications
-- **🆕 Real-Time Advanced Metrics** - Live monitoring of all enhanced WiFi parameters
-
-#### **🔧 Technical Enhancements**
-- **🆕 Hardened Runtime Support** - Enhanced security and compatibility for macOS deployment
-- **🆕 System Profiler Parser** - Advanced parsing of macOS system_profiler WiFi data for detailed network information
-- **🆕 Robust Error Handling** - Improved fallback mechanisms for MCS/NSS data when unavailable
-- **🆕 Performance Optimization** - Enhanced data collection efficiency with minimal system impact
-
-### Complete State Persistence
-- **Coverage maps now remember zoom, rotation, and pan state** when saved/loaded
-- Perfect project restoration for professional workflows
-
-### Enhanced User Interface
-- **Fixed right-click context menu** in coverage mapping - "View Details" now properly shows point information instead of attempting deletion
-- **Improved context menu organization** with proper action routing for "View Details", "Copy AP Info", and "Delete Point"
-- Enhanced point information display with comprehensive signal data, timestamps, and coordinates
-
-### Professional PDF Export
-- High-quality PDF generation with measurement data and floor plans
-- Professional layouts with statistics and analysis
-
-### Performance Optimizations
-- Improved app responsiveness with complex floor plans and large datasets
-- Enhanced compilation times and stability
-- **🆕 Real-time monitoring performance improvements** with optimized data filtering and chart rendering
-
-### Visual Consistency
-- Signal quality colors now consistent across all UI components
-- Green=Excellent, Blue=Good, Orange=Fair, Red=Poor
-- **🆕 Fixed UI elements** with proper SF Symbol usage and visual polish
-
-### Enhanced Stability
-- Crash prevention and error handling improvements
-- Better handling of edge cases and empty data
-- **Fixed context menu callback routing** for proper user interaction
-- **🆕 SwiftUI stability improvements** with proper state management and view lifecycle handling
-
-### Real-Time Signal Monitoring
-- **Live WiFi signal monitoring** with 1-second interval updates
-- **🆕 Reliable real-time charts** showing signal strength, noise levels, and SNR with proper data display
-- **🆕 Enhanced time range filtering** with "Last 1 minute", "Last 5 minutes", and "All data" options working correctly
-- Signal stability analysis with trend detection
-- Export capability for long-term monitoring data
-- **🆕 Performance optimized** with reduced computational overhead and smooth UI updates
-
-### Improved Diagnostic Flow
-- **Restored "Run All Diagnostics" workflow** with confirmation popup
-- Full-screen diagnostic overlay with animated progress indicator
-- Better user feedback during test execution
-- Enhanced export process that keeps app open after file saves
-
-### Enhanced Dashboard
-- **Comprehensive dashboard view** with real-time network metrics
-- Quick action cards for common diagnostic tasks
-- Recent activity tracking and system overview
-- Improved metric visualization and status indicators
-
-### **📊 Enhanced Data Collection**
-- **🆕 Comprehensive WiFi metrics collection** for coverage mapping including RSSI, noise levels, and SNR
-- **🆕 Advanced signal quality analysis** with noise floor measurements and signal-to-noise ratios
-- **🆕 Professional measurement data** suitable for enterprise WiFi planning and troubleshooting
-
-### **🔧 Enhanced User Interface**
-- **🆕 Fixed right-click context menu** in coverage mapping - "View Details" now properly shows point information instead of attempting deletion
-- **🆕 Improved context menu organization** with proper action routing for "View Details", "Copy AP Info", and "Delete Point"
-- **🆕 Enhanced point information display** with comprehensive signal data including SNR and noise levels, timestamps, and coordinates
+rather than generating misleading packet-loss results.
 
 ---
 
-## Features
+# 🚀 Core Features
 
-- **IT Analysis Engine (NEW in v4.1)**
-  - **🆕 Comprehensive Diagnostic Reports** - Professional-grade analysis combining signal quality, performance metrics, environment assessment, and hardware evaluation
-  - **🆕 Executive Summary Generation** - High-level network health scores and key findings for IT management
-  - **🆕 Prioritized IT Recommendations** - Critical, high, medium, and low priority action items with technical details
-  - **🆕 Technical Deep Dive Reports** - Detailed device specifications, network environment analysis, and historical data integration
-  - **🆕 Help Desk Integration** - Structured reports designed for IT support workflows and ticket management
-  - **🆕 Hardware Capability Assessment** - WiFi standard evaluation, efficiency ratings, and upgrade opportunity identification
-  - **🆕 Multi-Format Export** - Professional reports suitable for management, technical staff, and documentation
+## 📡 Wi-Fi Scanner
 
-- Real-Time Device & Network Info
-  - Models, OS version (shown with marketing name & build), CPU/RAM, active interface, MAC/IP/DNS, WiFi details (SSID, channel, band, security)
-  - **🆕 Advanced WiFi Metrics** - MCS Index, Spatial Streams (NSS), Channel Width, PHY Mode (802.11n/ac/ax)
-  - Real-time network monitoring with automatic refresh capabilities
-  - Enhanced dashboard with quick stats and system overview
+Scan surrounding wireless networks and analyze:
 
-- WiFi Scanner
-  - Instantly see all nearby SSIDs, signal quality, channels, security protocols, and export full scans to CSV/text
-  - Advanced channel analysis and interference detection
-  - Consistent visual signal strength indicators with professional color coding
-  - Network detail modal with comprehensive technical information
-  - Multi-AP network analysis with roaming detection
+* SSID
+* BSSID
+* RSSI
+* Signal quality
+* Channel
+* Band
+* Security
+* Nearby networks
+* Channel congestion
+* Multi-AP environments
+* Potential roaming conditions
 
-- Real-Time Signal Monitoring 
-  - **🆕 Stable and reliable WiFi signal monitoring** with continuous 1-second updates and proper data display
-  - **🆕 High-performance real-time charts** showing RSSI, noise levels, and signal-to-noise ratio with optimized rendering
-  - **🆕 Enhanced Chart Display** - Smooth line graphs with proper scaling and reliable time-based filtering
-  - **🆕 Robust time range controls** - "Last 1 minute", "Last 5 minutes", and "All data" filtering working correctly
-  - Signal stability analysis with connection quality assessment
-  - Trend detection (improving, stable, declining) over time
-  - Export monitoring data to CSV for detailed analysis
-  - Up to 5 minutes of historical data retention (300 data points)
-  - **🆕 Performance optimized** with intelligent caching and reduced computational overhead
-
-- Advanced Coverage Mapping 
-  - Interactive floor plan upload and visualization with support for PNG, JPEG, PDF, SVG, TIFF formats
-  - **🆕 Enhanced measurement data collection** - Each coverage point now records comprehensive WiFi metrics:
-    - RSSI (Received Signal Strength Indicator)
-    - Noise Level - Environmental noise measurement
-    - SNR (Signal-to-Noise Ratio) - Signal quality indicator
-    - **🆕 MCS Index** - Modulation and Coding Scheme for data rate analysis
-    - **🆕 Spatial Streams (NSS)** - MIMO stream count for throughput optimization
-    - **🆕 Channel Width** - 20MHz, 40MHz, 80MHz, 160MHz bandwidth detection
-    - **🆕 PHY Mode** - 802.11n/ac/ax (Wi-Fi 4/5/6) protocol identification
-    - Channel and Band information
-    - Timestamp and Location data
-  - Multiple coordinate tracking modes:
-    - Manual Entry - Type coordinates directly
-    - Click to Select - Point and click on map
-    - Live Mouse Tracking - Real-time cursor following
-    - Grid Assistant - Systematic measurement grid with customizable spacing
-  - Full map transform support: zoom, rotate, pan with precise controls
-  - Professional measurement point cards with signal quality indicators
-  - **🆕 Enhanced context menu** - Right-click coverage points for "View Details" (comprehensive point information including MCS, NSS, and PHY data), "Copy AP Info" (clipboard export), and "Delete Point" (confirmation dialog)
-  - Built-in recommendations system with best practices guide
-  - Complete state persistence - save and load coverage map projects with exact zoom/rotation/pan state
-  - **🆕 Professional PDF export** with enhanced measurement data including MCS/NSS analysis and statistics
-  - Signal quality legend and coverage statistics
-  - Roaming event detection and analysis
-
-- Comprehensive Speed & Network Testing
-  - Visual download/upload speed tests with animated meters
-  - Latency and packet loss analysis with real-time monitoring
-  - Historical tracking of all test results with automatic logging
-  - Restored "Run All Diagnostics" - comprehensive automated testing suite with confirmation popup
-  - Full-screen diagnostic overlay with animated progress indicator
-  - Real-time progress indicators and detailed result breakdowns
-
-- Professional Export System
-  - Export all technical and user info, test results, and network scans
-  - Multiple export formats (text reports, CSV data, high-quality PDF coverage maps)
-  - **🆕 Enhanced coverage map data export** with complete MCS/NSS measurement points and transform state
-  - **🆕 IT Analysis Report Export** - Professional diagnostic reports with executive summaries and technical deep dives
-  - MainActor-optimized PDF generation for reliable exports
-  - Enhanced export workflow - app stays open after successful exports
-  - Customizable export templates with user and location information
-  - Real-time signal monitoring data export with advanced WiFi metrics
-
-- Modern Professional UI
-  - **🆕 Enhanced dashboard** with Advanced WiFi Metrics card showing MCS descriptions and NSS analysis
-  - **🆕 IT Analysis Integration** - Quick access to comprehensive diagnostic report generation
-  - Enhanced welcome screen with animated feature cards
-  - Modern sidebar with hover effects and smooth animations
-  - Dynamic Light/Dark mode with professional color schemes
-  - Consistent color-blind friendly icons and accessibility features
-  - **🆕 Improved visual consistency** with proper SF Symbol usage and UI polish
-  - Extensive keyboard shortcuts and VoiceOver support
-  - Adaptive layout for different screen sizes
-  - Performance-optimized for large datasets and complex interactions
-  - Improved dashboard with metric cards and quick actions
-
-- Advanced Customization
-  - Hide or show any sidebar feature for deployments
-  - Configuration file-based customization (no code changes needed)
-  - Perfect for enterprise deployments and non-technical users
-  - Updated configuration keys for all current features
-
-- Advanced Technical Features
-  - **🆕 Enhanced WiFi Analysis** - Deep system profiler integration for MCS/NSS detection
-  - **🆕 IT Analysis Engine** - Comprehensive diagnostic assessment with professional reporting
-  - **🆕 Hardware Capability Analysis** - WiFi standard evaluation and upgrade recommendations
-  - **🆕 Optimized real-time monitoring** with proper SwiftUI state management and performance improvements
-  - Advanced visualization with Charts framework and reliable data filtering
-  - Comprehensive network diagnostics orchestration
-  - Enhanced crash prevention and error handling
-  - Professional-grade measurement accuracy
-  - Improved diagnostic flow with better user feedback
-
-- Integrated Help & Documentation
-  - Comprehensive in-app help system
-  - Step-by-step guides for all features
-  - Coverage mapping best practices
-  - Troubleshooting guides and technical explanations
-  - **🆕 MCS/NSS technical documentation** and WiFi standard explanations
-  - **🆕 IT Analysis Guide** - Professional reporting and diagnostic workflow documentation
-  - Real-time monitoring usage guide
-  - **🆕 Performance troubleshooting** section for real-time monitoring issues
+Scan information can also be exported for additional analysis.
 
 ---
 
-## IT Analysis Engine Guide (New in v4.1)
+## 📊 Real-Time Wi-Fi Monitoring
 
-### Comprehensive IT Diagnostic Reports
-The new IT Analysis Engine provides professional-grade diagnostic reports designed for help desk and IT support teams:
+Monitor the active Wi-Fi connection continuously.
 
-#### **Executive Summary**
-- **Overall Network Health Score** - Weighted assessment combining signal quality, performance, and environment factors
-- **High-Level Findings** - Key issues and positive aspects in business-friendly language
-- **Risk Assessment** - Identification of critical issues affecting productivity
+Metrics include:
 
-#### **Signal Analysis Report**
-- **Signal Quality Assessment** - RSSI categorization with interference level analysis
-- **SNR Quality Evaluation** - Signal-to-noise ratio impact on connection reliability
-- **Capacity Utilization** - Network load assessment and roaming readiness
-- **Signal Stability** - Connection consistency and variation analysis
+* RSSI
+* Noise
+* SNR
+* TX rate
+* Signal quality
+* MCS Index
+* Spatial Streams / NSS
+* Channel width
+* PHY mode
 
-#### **Performance Report**
-- **Speed Analysis** - Download/upload performance with quality ratings
-- **Latency Assessment** - Real-time application impact evaluation
-- **Reliability Scoring** - Overall connection dependability metrics
-- **Application Readiness** - Gaming, streaming, voice calls, and download suitability
+Measurements update approximately every **1 second**.
 
-#### **Environment Report**
-- **Network Congestion** - Channel utilization and interference source identification
-- **Security Assessment** - Security protocol analysis and vulnerability identification
-- **Band Utilization** - 2.4GHz, 5GHz, and 6GHz usage patterns
-- **Optimization Opportunities** - Specific recommendations for network improvements
+Up to **300 measurements / 5 minutes** of recent data can be retained for visualization.
 
-#### **Hardware Report**
-- **WiFi Standard Identification** - Device capability assessment (WiFi 4/5/6)
-- **Efficiency Rating** - Hardware performance grading based on MCS/NSS capabilities
-- **Upgrade Opportunities** - Specific hardware improvement recommendations
-- **Compatibility Assessment** - Modern standard support evaluation
+Available views include:
 
-### IT Recommendations System
-**Prioritized Action Items** with four priority levels:
-- **Critical** - Issues requiring immediate attention affecting productivity
-- **High** - Important improvements with significant impact
-- **Medium** - Beneficial optimizations for better performance
-- **Low** - Nice-to-have improvements for optimal setup
+* Last 1 minute
+* Last 5 minutes
+* All collected data
 
-Each recommendation includes:
-- **Technical Details** - Specific metrics and measurements
-- **Action Items** - Step-by-step troubleshooting instructions
-- **Category Classification** - Signal, Security, Performance, Hardware, Environment, Configuration
-
-### Professional Export Formats
-- **Executive Summary Reports** - Management-friendly overviews with key findings
-- **Technical Deep Dive** - Comprehensive technical analysis with all metrics
-- **Help Desk Integration** - Structured format for ticket management systems
-- **Historical Data Integration** - Coverage mapping and performance history inclusion
+Monitoring sessions can be exported to CSV.
 
 ---
 
-## Advanced WiFi Metrics Guide
+# 🗺️ Advanced Wi-Fi Coverage Mapping
 
-### Understanding MCS Index
-**Modulation and Coding Scheme (MCS)** determines the data rate and signal quality of your WiFi connection:
+Upload a floor plan and perform an interactive Wi-Fi site survey.
 
-- **802.11n (Wi-Fi 4)**: MCS 0-31
-  - MCS 0-7: 1 spatial stream
-  - MCS 8-15: 2 spatial streams  
-  - MCS 16-23: 3 spatial streams
-  - MCS 24-31: 4 spatial streams
+Supported floor-plan formats include:
 
-- **802.11ac (Wi-Fi 5)**: MCS 0-9 per spatial stream
-  - Higher MCS = better signal quality and data rates
-  - Requires good signal strength and low interference
+* PNG
+* JPEG
+* PDF
+* SVG
+* TIFF
 
-- **802.11ax (Wi-Fi 6)**: MCS 0-11 per spatial stream
-  - Most advanced with highest efficiency
-  - Supports more devices and better performance
+Measurement points can collect:
 
-### Spatial Streams (NSS)
-**Number of Spatial Streams** indicates MIMO capability:
-- **1 Stream**: Basic connection, lower throughput
-- **2 Streams**: Standard for most devices, good performance
-- **3-4 Streams**: High-performance devices, maximum throughput
-- **8+ Streams**: Enterprise/high-end equipment
+* RSSI
+* Noise
+* SNR
+* Channel
+* Band
+* MCS Index
+* Spatial Streams / NSS
+* Channel width
+* PHY mode
+* Timestamp
+* Location information
+* Visible AP information
 
-### Channel Width Impact
-**Bandwidth allocation affects performance**:
-- **20MHz**: Basic, congested areas, longer range
-- **40MHz**: Standard, good balance of speed and range
-- **80MHz**: High speed, shorter range, less congested
-- **160MHz**: Maximum speed, latest devices only
+### Measurement Modes
 
-### PHY Mode Evolution
-- **802.11n (Wi-Fi 4)**: Up to 600 Mbps, 2.4/5 GHz
-- **802.11ac (Wi-Fi 5)**: Up to 6.9 Gbps, 5 GHz only
-- **802.11ax (Wi-Fi 6)**: Up to 9.6 Gbps, 2.4/5/6 GHz, improved efficiency
+Coverage points can be created using:
 
-### Professional Analysis Tips
-1. **Monitor MCS Index**: Higher values indicate better signal quality
-2. **Check Spatial Streams**: More streams = potential for higher throughput
-3. **Optimize Channel Width**: Balance between speed and coverage
-4. **Upgrade PHY Mode**: Newer standards provide better performance and efficiency
-5. **Use Coverage Mapping**: Visualize how these metrics vary across your space
+* Manual coordinates
+* Click-to-select
+* Live mouse tracking
+* Grid Assistant
 
----
+### Map Controls
 
-## Quick Start
+Maps support:
 
-### Installation Requirements
-- macOS 13.0 (Ventura) or newer
-- Admin privileges for some network diagnostics
+* Zoom
+* Pan
+* Rotation
+* Point selection
+* Point renaming
+* Point details
+* AP information
+* Measurement deletion
+* Saved map state
 
-### Basic Usage
-1. Launch the app - Modern welcome screen guides you through features
-2. **🆕 Enhanced Dashboard** - View comprehensive system overview with real-time metrics including Advanced WiFi Metrics (MCS Index, Spatial Streams, Channel Width, PHY Mode)
-3. Device Info - View comprehensive system information (integrated into dashboard)
-4. WiFi Scanner - Scan and analyze nearby networks
-5. **🆕 Real-Time Monitor** - Monitor WiFi signal quality in real-time with stable, high-performance chart visualization
-6. **🆕 Enhanced Coverage Mapping** - Upload floor plans and create professional signal maps with MCS/NSS data collection
-7. Speed Testing - Run comprehensive network performance tests
-8. **🆕 IT Analysis Reports** - Generate professional diagnostic reports with executive summaries and technical analysis
-9. **🆕 Enhanced Export** - Generate professional reports with advanced WiFi analytics and IT recommendations
-
-### IT Analysis Workflow (New in v4.1)
-1. Navigate to Dashboard - Access IT Analysis quick actions
-2. **Generate IT Report** - Click "Generate IT Analysis Report" for comprehensive diagnostic
-3. **Review Analysis** - Examine executive summary, key findings, and prioritized recommendations
-4. **Export Report** - Save professional report in multiple formats for documentation and ticket management
-5. **Take Action** - Follow prioritized recommendations with technical details and action items
-
-### Coverage Mapping Workflow 
-1. Upload Floor Plan - Drag & drop or select PNG, JPEG, PDF, SVG, TIFF files
-2. Choose Tracking Mode - Manual, click, live, or Grid Assistant (recommended)
-3. **🆕 Enhanced Measurements** - Click locations to record comprehensive WiFi data including MCS Index, Spatial Streams, Channel Width, and PHY Mode
-4. Transform & Analyze - Zoom, rotate, pan for perfect alignment
-5. **🆕 Advanced Export** - Save as JSON project (with complete state) or generate PDF report with MCS/NSS analysis
-
-### Real-Time Signal Monitoring Workflow 
-1. Navigate to Real-time Monitor - Select from sidebar
-2. Start Monitoring - Click "Start Monitoring" button
-3. **🆕 Reliable Visualization** - Watch real-time charts with stable data display, smooth line graphs, and proper time-based filtering
-4. **🆕 Time Range Controls** - Switch between "Last 1 minute", "Last 5 minutes", and "All data" views for different analysis perspectives
-5. Analyze Trends - Monitor signal stability, variation, and connection quality
-6. **🆕 Advanced Export** - Save monitoring session data as CSV with MCS/NSS metrics for analysis
-
-### Advanced WiFi Analysis
-1. **MCS Index Monitoring** - Track Modulation and Coding Scheme for data rate optimization
-2. **Spatial Streams Analysis** - Monitor MIMO stream count for throughput analysis
-3. **Channel Width Detection** - Identify 20MHz, 40MHz, 80MHz, 160MHz configurations
-4. **PHY Mode Identification** - Detect Wi-Fi 4/5/6 (802.11n/ac/ax) protocols
-5. **Professional Data Export** - All advanced metrics included in coverage mapping and monitoring exports
+Saved projects preserve map positioning and measurement information.
 
 ---
 
-## Troubleshooting
+# 🔥 Signal Heatmaps
 
-### Real-Time Monitoring Issues (Fixed in Build 1.2)
+WiFi Diag Report can generate interpolated signal heatmaps from collected measurement points.
 
-#### **Chart Not Displaying Data** 
-- **Issue**: Signal data was being collected but charts showed "No signal data to display"
-- **Cause**: SwiftUI state management issues and filtering problems
-- **Fix**: Optimized data filtering logic and eliminated state modifications during view updates
+Heatmaps use measured RSSI information to visualize wireless coverage across a floor plan.
 
-#### **"Modifying state during view update" Errors** 
-- **Issue**: Console warnings about undefined behavior
-- **Cause**: State variables being modified inside computed properties during view rendering
-- **Fix**: Redesigned filtering architecture with proper computed properties
+Available visualization layers include:
 
-#### **Time Range Filtering Not Working** 
-- **Issue**: "Last 1 minute" and "Last 5 minutes" showed no data despite data collection
-- **Cause**: Timestamp comparison and filtering logic issues
-- **Fix**: Enhanced timestamp handling and proper time-based filtering implementation
+### Connected Network
 
-#### **Performance Issues** 
-- **Issue**: Excessive filtering calls and UI lag during monitoring
-- **Cause**: Redundant data processing and inefficient state management
-- **Fix**: Intelligent caching, debouncing, and optimized data flow
+Displays signal coverage for the currently connected network.
 
-### General Troubleshooting
+### Individual AP
 
-#### **WiFi Permissions**
-- Ensure Location Services are enabled for WiFi scanning
-- Grant necessary permissions when prompted
-- Restart the app if permissions were recently changed
+Select a specific BSSID/AP and visualize its measured coverage.
 
-#### **Network Scanning Issues**
-- Check that WiFi is enabled and connected
-- Try refreshing the network scan
-- Ensure no VPN or network restrictions are blocking scans
+### AP Overlap
 
-#### **Coverage Mapping Problems**
-- Verify uploaded images are in supported formats (PNG, JPEG, PDF, SVG, TIFF)
-- Check file permissions for uploaded floor plans
-- Ensure sufficient disk space for project saves
+Visualize areas where multiple usable APs overlap.
 
-#### **Export Problems**
-- Verify write permissions to selected export location
-- Check available disk space
-- Try alternative export formats if one fails
+Band filtering allows overlap analysis to be restricted to:
 
-#### **IT Analysis Issues (New in v4.1)**
-- Ensure device is connected to WiFi for comprehensive analysis
-- Check system permissions for hardware information access
-- Verify network connectivity for performance testing integration
+* 2.4 GHz
+* 5 GHz
+* 6 GHz
 
-#### **Performance Optimization**
-- Close unnecessary apps during intensive monitoring sessions
-- Reduce chart update frequency for older Macs if needed
-- Use "Last 1 minute" view for real-time monitoring on lower-spec machines
+This prevents multiple radios from the same multi-band deployment from artificially inflating AP overlap counts.
+
+Heatmaps can also be included in exported coverage-map reports.
 
 ---
 
-## Sidebar Customization (for Techs, Admins, Deployments)
+# 🌐 Real Network Performance Testing
 
-Wifi Diagnostics Report makes it easy for technical users to toggle feature visibility for non-technical end-users—without code changes or custom builds.
+WiFi Diag Report performs real network measurements rather than simulated results.
 
-### How It Works
+## Download / Upload Testing
 
-The app loads a bundled configuration file:  
-WifiDialogReport/Configuration.plist
+HTTP throughput measurements can be performed using multiple concurrent network streams.
 
-This file uses keys of the form HideXXXX for each feature or tool in the sidebar.
+## Latency
 
-- Set the value to <true/> to hide a sidebar section or tool
-- Set the value to <false/> to show that section/tool
+Latency testing measures network round-trip performance and can report:
 
-#### Example: Configuration.plist
+* Average latency
+* Jitter
+* Test method
 
+## Packet Loss
 
-## Technical Details
+Packet-loss testing evaluates whether expected responses are successfully received.
 
-### Real-Time Signal Monitoring
-- Update Frequency: 1-second intervals
-- Data Retention: 300 data points (5 minutes)
-- Metrics Tracked: RSSI, Noise Level, SNR, TX Rate, Signal Quality, MCS Index, Spatial Streams (NSS), Channel Width, PHY Mode
-- Export Format: CSV with timestamps and all measured parameters
-- Performance: Background processing to avoid UI blocking
+When sandbox restrictions prevent ICMP measurements, supported tests can use UDP-based network measurements instead.
 
-### Enhanced Diagnostic Flow
-- Confirmation Popup: Shows before running comprehensive diagnostics
-- Progress Overlay: Full-screen animated indicator during test execution
-- Concurrent Testing: Speed, latency, and packet loss tests run simultaneously
-- Export Integration: Automatic prompt to export results after completion
-
-### Improved Export System
-- App Persistence: Application remains open after successful exports
-- Success Feedback: Clear confirmation messages with file information
-- Error Handling: Detailed error messages for troubleshooting
-- Multiple Formats: Text reports, CSV data, and PDF coverage maps
-
-### Real-Time Signal Monitoring 
-- **🆕 Enhanced Chart Display** - Smooth line graphs with proper scaling and time-based filtering
-- Update Frequency: 1-second intervals
-- Data Retention: 300 data points (5 minutes)
-- Metrics Tracked: RSSI, Noise Level, SNR, TX Rate, Signal Quality, MCS Index, Spatial Streams (NSS), Channel Width, PHY Mode
-- Export Format: CSV with timestamps and all measured parameters
-- Performance: Background processing to avoid UI blocking
+Failed tests are reported as failures rather than generating fabricated results.
 
 ---
 
-## Contributing
+# 🧠 IT Analysis Engine
 
-We welcome contributions! Whether you're fixing bugs, adding features, or improving documentation, your help makes this tool better for everyone.
+The IT Analysis Engine converts collected technical information into structured diagnostic findings.
 
-### Development Setup
-1. Clone the repository
-2. Open Wifi Diagnostics Report.xcodeproj in Xcode
-3. Build and run (requires macOS 13.0+)
+It is designed specifically for:
 
-### Feature Areas
-- Real-time monitoring enhancements
-- Additional export formats
-- Advanced network analysis
-- UI/UX improvements
-- Performance optimizations
+* Help Desk technicians
+* Desktop support
+* Network administrators
+* IT managers
+* Higher-education IT environments
+
+## Executive Summary
+
+Provides:
+
+* Overall network health assessment
+* High-level findings
+* Major problems
+* Positive observations
+* Risk assessment
+
+## Signal Analysis
+
+Evaluates:
+
+* RSSI
+* Signal quality
+* SNR
+* Signal stability
+* Coverage
+* Potential roaming readiness
+
+## Performance Analysis
+
+Evaluates:
+
+* Download performance
+* Upload performance
+* Latency
+* Jitter
+* Packet loss
+* Connection reliability
+
+## Environment Analysis
+
+Evaluates:
+
+* Nearby networks
+* Channel congestion
+* Wireless interference
+* Security
+* Band utilization
+* Optimization opportunities
+
+## Hardware Analysis
+
+Evaluates:
+
+* Wi-Fi standard
+* MCS capability
+* Spatial streams
+* Channel width
+* Device limitations
+* Hardware efficiency
+* Potential upgrade opportunities
 
 ---
 
-## Acknowledgments
+# 🚦 IT Recommendations
 
-Built with for the macOS community, IT professionals, and anyone who needs reliable network diagnostics.
+Diagnostic findings can generate prioritized recommendations.
 
-Special thanks to:
-- The macOS developer community
-- CoreWLAN framework contributors
-- SwiftUI Charts framework
-- All users providing feedback and suggestions
-- For their contributions and support, making Wifi Diagnostics Report version 4.0 a better and more powerful tool for advanced WiFi analytics and network troubleshooting.
+### 🔴 Critical
 
-  ## 🌐 Connect With Me
-- [GitHub](https://github.com/hov172)  
-- [PowerShell Gallery](https://www.powershellgallery.com/profiles/hov172)  
-- 📨 Slack: **@Hov172**  
-- 🕹️ Discord: **Jay172_**  
-- [LinkedIn](https://www.linkedin.com/in/jesus-a-785bb616?trk=people-guest_people_search-card)  
-- 🐦 [Twitter / X (@AyalaSolutions)](https://twitter.com/AyalaSolutions)  
-- <a href="https://bsky.app/profile/ayalasolutions.bsky.social"><img src="https://raw.githubusercontent.com/bluesky-social/social-app/main/assets/logo.png" width="20" alt="Bluesky Logo"></a> [@AyalaSolutions](https://bsky.app/profile/ayalasolutions.bsky.social)  
-- [![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/hov172)  
-- 📧 *Contact via GitHub, Social accounts issues or discussions*  
+Problems requiring immediate attention.
+
+### 🟠 High
+
+Important problems likely to have a significant effect on connectivity or performance.
+
+### 🟡 Medium
+
+Recommended optimizations that may improve reliability or performance.
+
+### 🟢 Low
+
+Optional improvements and best-practice recommendations.
+
+Recommendations can include:
+
+* Technical details
+* Measurements
+* Explanation
+* Troubleshooting actions
+* Suggested remediation
+
+Categories include:
+
+* Signal
+* Security
+* Performance
+* Hardware
+* Environment
+* Configuration
 
 ---
 
-⭐ *If you find my tools useful, consider giving them a star to support future development!*
+# 📶 Advanced Wi-Fi Metrics
+
+## MCS Index
+
+**Modulation and Coding Scheme (MCS)** provides information about the modulation, coding rate, spatial streams, and potential data rate of a Wi-Fi connection.
+
+Supported analysis includes Wi-Fi 4, Wi-Fi 5, and Wi-Fi 6 environments.
+
+## Spatial Streams — NSS
+
+The Number of Spatial Streams helps identify the MIMO capabilities being used by the connection.
+
+More spatial streams can provide greater potential throughput when supported by both the client and access point.
+
+## Channel Width
+
+WiFi Diag Report can identify common channel widths including:
+
+* 20 MHz
+* 40 MHz
+* 80 MHz
+* 160 MHz
+
+## PHY Mode
+
+The application can identify supported/current Wi-Fi PHY information including:
+
+* 802.11n / Wi-Fi 4
+* 802.11ac / Wi-Fi 5
+* 802.11ax / Wi-Fi 6
+
+---
+
+# 📄 Professional Reporting
+
+WiFi Diag Report can export diagnostic information in multiple formats for different audiences.
+
+Reports can include:
+
+* Device information
+* Network configuration
+* Wi-Fi connection information
+* Signal measurements
+* Nearby network scans
+* Speed-test results
+* Latency
+* Packet loss
+* Advanced Wi-Fi metrics
+* Coverage-map measurements
+* Heatmaps
+* IT Analysis findings
+* Recommendations
+
+### Report Types
+
+**End-User / Student Report**
+
+Designed to provide Help Desk technicians with the information needed to begin troubleshooting.
+
+**IT Technical Report**
+
+Provides detailed measurements and technical findings.
+
+**Executive Summary**
+
+Provides higher-level network-health information and major findings.
+
+**Coverage Map Report**
+
+Combines floor plans, survey points, signal information, statistics, and optional heatmaps.
+
+---
+
+# 🛠️ Run All Diagnostics
+
+The automated diagnostic workflow can run multiple tests and collect information in a single operation.
+
+The interface provides:
+
+* Confirmation before starting
+* Full-screen progress display
+* Concurrent network testing
+* Real-time progress
+* Result summaries
+* Export options after completion
+
+---
+
+# 🎛️ Deployment Customization
+
+WiFi Diag Report can be customized for different types of users without creating separate builds.
+
+The application reads:
+
+`WifiDialogReport/Configuration.plist`
+
+Feature visibility is controlled using `HideXXXX` configuration keys.
+
+For example:
+
+```xml
+<key>HideAdvancedTools</key>
+<true/>
+```
+
+A value of:
+
+```xml
+<true/>
+```
+
+hides the associated feature.
+
+A value of:
+
+```xml
+<false/>
+```
+
+makes the feature available.
+
+This allows organizations to create different experiences for:
+
+* Students
+* Faculty
+* Staff
+* Help Desk technicians
+* Network administrators
+* IT administrators
+
+while maintaining the same application.
+
+---
+
+# ⚡ Quick Start
+
+## Requirements
+
+* macOS 13 Ventura or newer
+* Wi-Fi enabled
+* Location permission for Wi-Fi scanning
+* Network access for performance testing
+* Additional permissions where required by macOS
+
+## Basic Workflow
+
+1. Launch WiFi Diag Report.
+2. Review the Dashboard.
+3. Verify device and network information.
+4. Scan surrounding Wi-Fi networks.
+5. Start real-time signal monitoring.
+6. Run network performance tests.
+7. Run the automated diagnostic workflow.
+8. Review IT Analysis findings.
+9. Generate a diagnostic report.
+
+---
+
+# 🗺️ Coverage Survey Workflow
+
+1. Open **Coverage Mapping**.
+2. Import a floor plan.
+3. Select a measurement method.
+4. Move to the first physical survey location.
+5. Add a measurement point.
+6. Allow WiFi Diag Report to collect Wi-Fi/AP information.
+7. Continue through the survey area.
+8. Enable the signal heatmap.
+9. Select the desired AP or overlap layer.
+10. Review coverage and overlap.
+11. Generate the coverage-map report.
+
+---
+
+# 🧰 Troubleshooting
+
+## Wi-Fi Permissions
+
+If Wi-Fi scanning does not work:
+
+* Verify Wi-Fi is enabled.
+* Verify Location Services are enabled.
+* Grant requested permissions.
+* Restart the application after changing permissions if necessary.
+
+## Network Scanning
+
+If surrounding networks are not detected:
+
+* Verify Wi-Fi is active.
+* Refresh the scan.
+* Check macOS privacy permissions.
+* Check for VPN or security restrictions.
+
+## Coverage Mapping
+
+If a floor plan cannot be loaded:
+
+* Verify the file format.
+* Check file permissions.
+* Verify sufficient available disk space.
+
+## Export Problems
+
+If an export fails:
+
+* Verify the destination is writable.
+* Check available disk space.
+* Select another destination.
+* Try another supported export format.
+
+## Network Tests
+
+Some network tests may behave differently when the application is running inside the macOS App Sandbox.
+
+When ICMP access is unavailable, supported diagnostics can automatically use an alternate UDP-based measurement.
+
+The application identifies the measurement method in the results.
+
+---
+
+# 🏗️ Technical Details
+
+WiFi Diag Report is built using native macOS technologies including:
+
+* Swift
+* SwiftUI
+* CoreWLAN
+* Apple networking frameworks
+* Swift Charts
+* macOS system information interfaces
+
+The application uses background processing where appropriate to avoid blocking the user interface during network collection and diagnostic operations.
+
+---
+
+# 👨‍💻 Development
+
+## Requirements
+
+* macOS 13+
+* Xcode
+* Swift / SwiftUI development environment
+
+## Setup
+
+1. Clone the repository.
+2. Open `Wifi Diagnostics Report.xcodeproj` in Xcode.
+3. Configure signing if required.
+4. Build and run.
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+Areas of interest include:
+
+* Wi-Fi analysis
+* Coverage mapping
+* Network diagnostics
+* Additional reporting formats
+* Performance improvements
+* UI/UX improvements
+* Accessibility
+* Help Desk integration
+* Cross-platform feature parity
+
+Bug reports, feature requests, documentation improvements, and code contributions are welcome through GitHub.
+
+---
+
+# 🌐 Connect With Me
+
+* [GitHub](https://github.com/hov172)
+* [PowerShell Gallery](https://www.powershellgallery.com/profiles/hov172)
+* 📨 Slack: **@Hov172**
+* 🕹️ Discord: **Jay172_**
+* [LinkedIn](https://www.linkedin.com/in/jesus-a-785bb616?trk=people-guest_people_search-card)
+* [Twitter / X — @AyalaSolutions](https://twitter.com/AyalaSolutions)
+* [Bluesky — @AyalaSolutions](https://bsky.app/profile/ayalasolutions.bsky.social)
+* [Buy Me a Coffee](https://buymeacoffee.com/hov172)
+
+For questions, issues, and feature requests, please use the project's GitHub Issues or Discussions.
+
+---
+
+# ⭐ Support the Project
+
+If you find these tools useful, consider giving the repositories a ⭐ on GitHub.
+
+It helps support continued development of the **PowerShell, Windows, macOS, and iOS/iPadOS Wi-Fi diagnostic tools**.

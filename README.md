@@ -12,7 +12,7 @@ I create a PS (Powershell Script), IOS and a Windows App that does something sim
 - Windows: https://github.com/hov172/WinWiFiAnalyzer
 - IOS Beta Test: https://testflight.apple.com/join/hDPGsHzd
 - Macos: https://github.com/hov172/WinWiFiAnalyzer/releases/download/Windows_Wifi_Report/Wi.Fi.Analyzer.dmg
-  (Matches Windows Version Layout) from a different repo.
+  - (Matches Windows Version Layout) from WinWiFiAnalyzer repo.
 
   
 # Wifi Diagnostics Report

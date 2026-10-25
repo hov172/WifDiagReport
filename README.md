@@ -118,6 +118,29 @@ Students or other non-IT users can generate a simplified diagnostic report and s
 
 # 🆕 What's New
 
+## Version 4.5 Build 1.6 — Accurate Speed Test & Report Fixes
+
+### 🚀 Rebuilt Speed Test
+
+* **One connection per stream** — Six download and four upload streams each open their own TCP connection. The previous version shared one connection across streams, which measured a single flow and under-read on busy or lossy Wi-Fi.
+
+* **Timed measurement windows** — Download and upload each run for 10 seconds. Connection setup and TCP ramp-up are excluded from the figure, as commercial speed tests do.
+
+* **Honest upload** — Upload sends adaptively sized chunks until the deadline and counts only bytes the server acknowledged, instead of a single fixed transfer.
+
+* **Nearest server** — Apple's network-quality endpoints and Cloudflare are probed, and the lower-latency server is used for the test.
+
+* **Expect different numbers** — Results on the same network will not match reports from 4.4. The new figures are closer to what `networkQuality` and browser speed tests report.
+
+### 📄 Diagnostic Report Fixes
+
+* The Detected Networks list now spans as many pages as needed instead of stopping at twelve networks and adding an empty page.
+* The header score and the executive summary use the same formula and always agree.
+* The Environment rating now reflects channel congestion as well as security, so a severely congested site no longer scores five stars.
+* Fixed the OS version line, the "Signal: 0 dBm" shown for empty bands, truncated security labels, and a readiness badge that wrapped mid-word.
+
+---
+
 ## Version 4.4 Build 1.5 — Multi-AP Mapping
 
 ### 📡 Multi-AP Capture & Overlap Mapping
@@ -324,7 +347,7 @@ WiFi Diag Report performs real network measurements rather than simulated result
 
 ## Download / Upload Testing
 
-HTTP throughput measurements can be performed using multiple concurrent network streams.
+HTTP throughput is measured over timed 10-second windows using six download and four upload streams, each on its own TCP connection, with connection ramp-up excluded. The test picks the nearer of Apple's network-quality endpoints and Cloudflare by probe latency.
 
 ## Latency
 

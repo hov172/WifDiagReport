@@ -12,6 +12,13 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ---
 
+## What's New - Version 4.7 Build 1.8
+
+- Dashboard WiFi Standards card adds WiFi 7 (802.11be); Wi-Fi 7 implies Wi-Fi 6/5/4, 6 GHz band, 320 MHz max width, EHT / MLO feature row
+- MCS 0-13 and spatial-stream estimates for 802.11be
+- IT Analysis Hardware report identifies WiFi 7
+- Scanned access points remain band-estimated (macOS does not expose beacon PHY capabilities)
+
 ## What's New - Version 4.6 Build 1.7
 
 - Dashboard and PDF show IP Address, Router, Country Code, MAC Address, and the channel with band and width
@@ -191,6 +198,7 @@ Built for IT professionals, support staff, students, and power users, it empower
   - Requires good signal strength and low interference
 
 - **802.11ax (Wi-Fi 6)**: MCS 0-11 per spatial stream
+- **802.11be (Wi-Fi 7)**: MCS 0-13 per spatial stream, 4096-QAM, 320 MHz channels
   - Most advanced with highest efficiency
   - Supports more devices and better performance
 
@@ -212,6 +220,7 @@ Built for IT professionals, support staff, students, and power users, it empower
 - **802.11n (Wi-Fi 4)**: Up to 600 Mbps, 2.4/5 GHz
 - **802.11ac (Wi-Fi 5)**: Up to 6.9 Gbps, 5 GHz only
 - **802.11ax (Wi-Fi 6)**: Up to 9.6 Gbps, 2.4/5/6 GHz, improved efficiency
+- **802.11be (Wi-Fi 7)**: Up to 46 Gbps, 2.4/5/6 GHz, 320 MHz channels, Multi-Link Operation
 
 ### Professional Analysis Tips
 1. **Monitor MCS Index**: Higher values indicate better signal quality

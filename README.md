@@ -118,6 +118,18 @@ Students or other non-IT users can generate a simplified diagnostic report and s
 
 # 🆕 What's New
 
+## Version 4.7 Build 1.8 — Wi-Fi 7 Support
+
+### 📡 Wi-Fi 7 (802.11be)
+
+* **Dashboard** WiFi Standards card adds a WiFi 7 (802.11be) row. A Wi-Fi 7 connection now reads as WiFi 7 instead of a raw PHY code with every standard marked unsupported.
+* Wi-Fi 7 implies Wi-Fi 6/5/4 support, Beamforming, and HE. New `802.11be EHT / MLO` feature row, Supported Bands shows 6 GHz on Wi-Fi 6 and 7 hardware, Max Channel Width 320 MHz.
+* MCS 0–13 descriptions (4096-QAM) and spatial-stream estimates for 802.11be; the theoretical-speed estimate recognises 160 and 320 MHz channels.
+* **IT Analysis** Hardware report identifies WiFi 7 and no longer recommends a WiFi 6 upgrade to Wi-Fi 7 Macs.
+* Applies to Macs with full Wi-Fi 7 (M5 Pro/Max generation or later, per Apple). Scanned access points are still labelled by band estimate because macOS does not expose beacon PHY capabilities to apps.
+
+---
+
 ## Version 4.6 Build 1.7 — Connection Details, Scanner Accuracy & Hidden Networks
 
 ### 📶 Current Connection Details
@@ -501,7 +513,7 @@ Categories include:
 
 **Modulation and Coding Scheme (MCS)** provides information about the modulation, coding rate, spatial streams, and potential data rate of a Wi-Fi connection.
 
-Supported analysis includes Wi-Fi 4, Wi-Fi 5, and Wi-Fi 6 environments.
+Supported analysis includes Wi-Fi 4, Wi-Fi 5, Wi-Fi 6, and Wi-Fi 7 environments.
 
 ## Spatial Streams — NSS
 
@@ -525,6 +537,7 @@ The application can identify supported/current Wi-Fi PHY information including:
 * 802.11n / Wi-Fi 4
 * 802.11ac / Wi-Fi 5
 * 802.11ax / Wi-Fi 6
+* 802.11be / Wi-Fi 7
 
 ---
 

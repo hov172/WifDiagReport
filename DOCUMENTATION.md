@@ -12,6 +12,13 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ---
 
+## What's New - Version 4.6 Build 1.7
+
+- Dashboard and PDF show IP Address, Router, Country Code, MAC Address, and the channel with band and width
+- Scanner performs a real first sweep, keeps recently heard networks, shows hidden networks, and removes duplicate rows
+- Scanned networks show real channel width and beacon interval
+- Coverage map points record TX rate
+
 ## What's New - Version 4.0 Build 1.2
 
 ### **🚀 Real-Time Monitoring Performance Fixes (Latest)**

@@ -118,6 +118,26 @@ Students or other non-IT users can generate a simplified diagnostic report and s
 
 # 🆕 What's New
 
+## Version 4.6 Build 1.7 — Connection Details, Scanner Accuracy & Hidden Networks
+
+### 📶 Current Connection Details
+
+* **Dashboard** now lists IP Address, Router, Country Code, and the channel as `157 (5 GHz, 40 MHz)`, the same detail the macOS Wi-Fi menu shows under Known Networks.
+* **PDF report** adds MAC Address, IP Address, Router, and Country Code to Current Connection Details. Each scanned network line now shows PHY mode, channel width, country code, and beacon interval.
+
+### 🔍 Scanner Accuracy
+
+* **Complete first scan** — Right after launch macOS hands back a cached, partial list in a few milliseconds. The scanner now notices and sweeps the channels for real.
+* **No dropped networks** — Networks heard in the last 60 seconds stay listed if one sweep misses them.
+* **Hidden networks are shown** — They were silently discarded before. They now appear as `<Hidden>`, with the name filled in when this Mac already knows the network, or a note of which broadcast network shares the same radio. The report's Hidden Networks count is now accurate.
+* Duplicate rows removed, real channel width per network, beacon interval in the expanded row and CSV.
+
+### 🗺️ Coverage Map
+
+* Each measurement point records the link TX rate and shows it in the point details, the printable table, and the CSV. Surveys from earlier versions still open.
+
+---
+
 ## Version 4.5 Build 1.6 — Accurate Speed Test & Report Fixes
 
 ### 🚀 Rebuilt Speed Test

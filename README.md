@@ -6,7 +6,7 @@ WiFi Diag Report is a free macOS application designed for Wi-Fi and network diag
 
 Built for **IT professionals, Help Desk teams, students, and power users**, the application can analyze a Mac's connectivity, scan surrounding wireless networks, monitor signal quality, test network performance, map Wi-Fi coverage, and generate detailed diagnostic reports.
 
-> **System Requirement:** macOS 13.0 (Ventura) or newer.
+> **System Requirement:** macOS 14.0 (Sonoma) or newer.
 
 ---
 
@@ -633,7 +633,7 @@ while maintaining the same application.
 
 ## Requirements
 
-* macOS 13 Ventura or newer
+* macOS 14 Sonoma or newer
 * Wi-Fi enabled
 * Location permission for Wi-Fi scanning
 * Network access for performance testing

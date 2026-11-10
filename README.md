@@ -1,4 +1,4 @@
-# 📡 WiFi Diag Report
+# <img src="images/app-icon.png" width="48" align="top" alt=""> WiFi Diag Report
 
 **Professional Wi-Fi diagnostics, network analysis, coverage mapping, and Help Desk reporting for macOS.**
 

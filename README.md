@@ -118,6 +118,17 @@ Students or other non-IT users can generate a simplified diagnostic report and s
 
 # 🆕 What's New
 
+## Version 4.7.1 Build 1.9 — Mac Hardware Ceilings
+
+### 🔧 Hardware Assessment Corrections
+
+* Hardware cards now follow Apple's published Mac Wi-Fi specifications: every Mac, including Wi-Fi 7 (N1) models, is 2 spatial streams, 160 MHz max channel width and MCS 11.
+* **Max Channel Width** reports 160 MHz on Wi-Fi 7 (was 320 MHz). **Max Spatial Streams** reports 2 on every generation (was 3–4).
+* The theoretical max speed for Wi-Fi 7 no longer applies a 4096-QAM bonus, and the connected-link spatial-stream estimate caps at 2.
+* Documentation distinguishes 802.11be spec features (320 MHz, 4096-QAM) from what Mac hardware supports.
+
+---
+
 ## Version 4.7 Build 1.8 — Wi-Fi 7 Support
 
 ### 📡 Wi-Fi 7 (802.11be)

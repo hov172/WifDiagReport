@@ -12,6 +12,11 @@ Built for IT professionals, support staff, students, and power users, it empower
 
 ---
 
+## What's New - Version 4.7.1 Build 1.9
+
+- Hardware cards follow Apple's published Mac Wi-Fi specs: 2 spatial streams, 160 MHz max width, MCS 11 on every Mac including Wi-Fi 7 models
+- Max Channel Width 160 MHz on Wi-Fi 7 (was 320 MHz); Max Spatial Streams 2 (was 3-4); no 4096-QAM speed bonus
+
 ## What's New - Version 4.7 Build 1.8
 
 - Dashboard WiFi Standards card adds WiFi 7 (802.11be); Wi-Fi 7 implies Wi-Fi 6/5/4, 6 GHz band, 320 MHz max width, EHT / MLO feature row
